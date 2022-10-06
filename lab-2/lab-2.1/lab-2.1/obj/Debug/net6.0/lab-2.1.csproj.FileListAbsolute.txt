@@ -1,0 +1,15 @@
+/home/user/RiderProjects/lab-2.1/lab-2.1/bin/Debug/net6.0/lab-2.1
+/home/user/RiderProjects/lab-2.1/lab-2.1/bin/Debug/net6.0/lab-2.1.deps.json
+/home/user/RiderProjects/lab-2.1/lab-2.1/bin/Debug/net6.0/lab-2.1.runtimeconfig.json
+/home/user/RiderProjects/lab-2.1/lab-2.1/bin/Debug/net6.0/lab-2.1.dll
+/home/user/RiderProjects/lab-2.1/lab-2.1/bin/Debug/net6.0/ref/lab-2.1.dll
+/home/user/RiderProjects/lab-2.1/lab-2.1/bin/Debug/net6.0/lab-2.1.pdb
+/home/user/RiderProjects/lab-2.1/lab-2.1/obj/Debug/net6.0/lab-2.1.csproj.AssemblyReference.cache
+/home/user/RiderProjects/lab-2.1/lab-2.1/obj/Debug/net6.0/lab-2.1.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/RiderProjects/lab-2.1/lab-2.1/obj/Debug/net6.0/lab-2.1.AssemblyInfoInputs.cache
+/home/user/RiderProjects/lab-2.1/lab-2.1/obj/Debug/net6.0/lab-2.1.AssemblyInfo.cs
+/home/user/RiderProjects/lab-2.1/lab-2.1/obj/Debug/net6.0/lab-2.1.csproj.CoreCompileInputs.cache
+/home/user/RiderProjects/lab-2.1/lab-2.1/obj/Debug/net6.0/lab-2.1.dll
+/home/user/RiderProjects/lab-2.1/lab-2.1/obj/Debug/net6.0/ref/lab-2.1.dll
+/home/user/RiderProjects/lab-2.1/lab-2.1/obj/Debug/net6.0/lab-2.1.pdb
+/home/user/RiderProjects/lab-2.1/lab-2.1/obj/Debug/net6.0/lab-2.1.genruntimeconfig.cache
