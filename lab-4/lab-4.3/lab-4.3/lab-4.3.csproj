@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>lab_4._3</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="lab-4.2">
+        <HintPath>..\..\lab-4.2\lab-4.2\bin\Debug\net6.0\lab-4.2.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
