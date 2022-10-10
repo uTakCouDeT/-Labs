@@ -73,21 +73,25 @@ class CarCatalog
         }
     }
 
-    public IEnumerable<Car> YearProduct()
+    public IEnumerable<Car> YearProduct(int year)
     {
-        Cars.Sort(new CarComparer(CarComparerType.ProductionYear));
         for (int i = 0; i < Cars.Count; ++i)
         {
-            yield return Cars[i];
+            if (Cars[i].ProductionYear <= year)
+            {
+                yield return Cars[i];
+            }
         }
     }
 
-    public IEnumerable<Car> Speed()
+    public IEnumerable<Car> Speed(int speed)
     {
-        Cars.Sort(new CarComparer(CarComparerType.MaxSpeed));
         for (int i = 0; i < Cars.Count; ++i)
         {
-            yield return Cars[i];
+            if (Cars[i].MaxSpeed >= speed)
+            {
+                yield return Cars[i];
+            }
         }
     }
 }
@@ -100,8 +104,10 @@ class Program
         Car car2 = new Car("Toyota", 2018, 180);
         Car car3 = new Car("Nisan", 2006, 190);
         Car car4 = new Car("BMW", 2021, 220);
+        Car car5 = new Car("Panzerkampfwagen Neubaufahrzeug", 1930, 30);
 
-        CarCatalog catalog = new CarCatalog(car1, car2, car3, car4);
+
+        CarCatalog catalog = new CarCatalog(car1, car2, car3, car4, car5);
 
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Прямой проход с первого элемента до последнего");
@@ -119,18 +125,18 @@ class Program
             elem.Print();
         }
 
-        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        Console.WriteLine("Проход по элементам массива с фильтром по году выпуска");
-        Console.WriteLine("------------------------------------------------------");
-        foreach (Car elem in catalog.YearProduct())
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("Проход по элементам массива с фильтром до 2000 года выпуска");
+        Console.WriteLine("-----------------------------------------------------------");
+        foreach (Car elem in catalog.YearProduct(2000))
         {
             elem.Print();
         }
 
-        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        Console.WriteLine("Проход по элементам массива с фильтром по максимальной скорости");
-        Console.WriteLine("---------------------------------------------------------------");
-        foreach (Car elem in catalog.Speed())
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("Проход по элементам массива с фильтром от максимальной скорости 170");
+        Console.WriteLine("-------------------------------------------------------------------");
+        foreach (Car elem in catalog.Speed(170))
         {
             elem.Print();
         }

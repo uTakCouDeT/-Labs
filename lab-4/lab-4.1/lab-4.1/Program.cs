@@ -69,20 +69,28 @@
 
     static public MyMatrix operator *(MyMatrix lhs, MyMatrix rhs)
     {
-        MyMatrix newMatrix = new MyMatrix(lhs._lines, lhs._columns);
-        for (int i = 0; i < lhs._lines; i++)
+        if (lhs._lines != rhs._columns)
         {
-            for (int j = 0; j < lhs._columns; j++)
+            Console.WriteLine("Данные матрицы нельзя перемножать");
+            return null;
+
+        }
+        else
+        {
+            MyMatrix newMatrix = new MyMatrix(lhs._lines, lhs._columns);
+            for (int i = 0; i < lhs._lines; i++)
             {
-                newMatrix[i, j] = 0;
-                for (int k = 0; k < lhs._columns; k++)
+                for (int j = 0; j < lhs._columns; j++)
                 {
-                    newMatrix[i, j] += lhs[i, k] * rhs[k, j];
+                    newMatrix[i, j] = 0;
+                    for (int k = 0; k < lhs._columns; k++)
+                    {
+                        newMatrix[i, j] += lhs[i, k] * rhs[k, j];
+                    }
                 }
             }
+            return newMatrix;
         }
-
-        return newMatrix;
     }
 
     static public MyMatrix operator *(MyMatrix matrix, double num)
@@ -147,7 +155,7 @@ internal class Program
 
         Console.WriteLine("Введите количество столбцов:");
         column = int.Parse(Console.ReadLine());
-        
+
         Console.WriteLine("Введите минимальное значение элементов:");
         rand1 = int.Parse(Console.ReadLine());
 
@@ -156,7 +164,7 @@ internal class Program
 
         MyMatrix matrix1 = new MyMatrix(line, column, rand1, rand2);
         MyMatrix matrix2 = new MyMatrix(line, column, rand1, rand2);
-        
+
         MyMatrix newMatrix = new MyMatrix(line, column);
 
         Console.WriteLine("Первая матрица:");

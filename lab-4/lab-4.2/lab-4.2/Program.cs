@@ -53,8 +53,9 @@ class Program
         Car car2 = new Car("Toyota", 2018, 180);
         Car car3 = new Car("Nisan", 2006, 190);
         Car car4 = new Car("BMW", 2021, 220);
+        Car car5 = new Car("Panzerkampfwagen Neubaufahrzeug", 1930, 30);
 
-        List<Car> cars = new List<Car> { car1, car2, car3, car4 };
+        List<Car> cars = new List<Car> { car1, car2, car3, car4, car5 };
 
         while (true)
         {
