@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/user/RiderProjects/lab-4/lab-4.1/lab-4.1/lab-4.1.csproj": {}
+    "/home/user/Документы/GitHub/csLabs/lab-4/lab-4.1/lab-4.1/lab-4.1.csproj": {}
   },
   "projects": {
-    "/home/user/RiderProjects/lab-4/lab-4.1/lab-4.1/lab-4.1.csproj": {
+    "/home/user/Документы/GitHub/csLabs/lab-4/lab-4.1/lab-4.1/lab-4.1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/user/RiderProjects/lab-4/lab-4.1/lab-4.1/lab-4.1.csproj",
+        "projectUniqueName": "/home/user/Документы/GitHub/csLabs/lab-4/lab-4.1/lab-4.1/lab-4.1.csproj",
         "projectName": "lab-4.1",
-        "projectPath": "/home/user/RiderProjects/lab-4/lab-4.1/lab-4.1/lab-4.1.csproj",
+        "projectPath": "/home/user/Документы/GitHub/csLabs/lab-4/lab-4.1/lab-4.1/lab-4.1.csproj",
         "packagesPath": "/home/user/.nuget/packages/",
-        "outputPath": "/home/user/RiderProjects/lab-4/lab-4.1/lab-4.1/obj/",
+        "outputPath": "/home/user/Документы/GitHub/csLabs/lab-4/lab-4.1/lab-4.1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/user/.nuget/NuGet/NuGet.Config"
