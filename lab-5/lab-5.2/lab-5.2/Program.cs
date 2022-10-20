@@ -50,7 +50,7 @@
     {
         get
         {
-            Console.Write("MyList size: ");
+            Console.Write("size: ");
             return newList.Count();
         }
     }
@@ -71,18 +71,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        MyList<int> loo = new MyList<int>(5, 6, 3, 5, 5, 12, 7, 87);
-        loo.Print();
-        Console.WriteLine(loo.Size);
+        MyList<int> list = new MyList<int>(1, 2, 3, 5, 7, 12, 7, 111);
+        list.Print();
+        Console.WriteLine(list.Size);
 
-        loo.Add(5, 4, 1, 2, 6, 7, 5, 6, 9, 10, 199, 99454);
-        loo.Print();
-        Console.WriteLine(loo.Size);
+        list.Add(5, 4, 3, 2, 6, 7, 4, 5, 9, 10, 34, 12);
+        list.Print();
+        Console.WriteLine(list.Size);
 
-        loo.Add(1337);
-        loo.Print();
-        Console.WriteLine(loo.Size);
+        list.Add(12345);
+        list.Print();
+        Console.WriteLine(list.Size);
 
-        Console.WriteLine(loo[20]);
+        Console.WriteLine(list[20]);
     }
 }

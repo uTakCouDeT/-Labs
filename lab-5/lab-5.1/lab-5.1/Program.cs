@@ -105,43 +105,21 @@
         Console.WriteLine("\r");
     }
 
-    public void ShowPartial(int[] firstCoord, int[] secCoord)
+    public void ShowPartial(int[] a, int[] b)
     {
-        for (int i = firstCoord[0]; i <= secCoord[0]; ++i)
         {
-            if (i == firstCoord[0] && firstCoord[0] == secCoord[0])
+            for (int i = a[0]; i <= b[0]; i++)
             {
-                for (int j = firstCoord[1]; j <= secCoord[1]; ++j)
+                for (int j = a[1]; j <= b[1]; j++)
                 {
-                    Console.WriteLine(matrix[i, j]);
+                    Console.Write($"{matrix[i, j]} ");
                 }
 
-                break;
+                Console.WriteLine("\r");
             }
-            else if (i == firstCoord[0])
-            {
-                for (int j = firstCoord[1]; j < columns; ++j)
-                {
-                    Console.WriteLine(matrix[i, j]);
-                }
-            }
-            else if (i < secCoord[0])
-            {
-                for (int j = 0; j < columns; ++j)
-                {
-                    Console.WriteLine(matrix[i, j]);
-                }
-            }
-            else if (i == secCoord[0])
-            {
-                for (int j = 0; j <= secCoord[1]; ++j)
-                {
-                    Console.WriteLine(matrix[i, j]);
-                }
-            }
+
+            Console.WriteLine("\r");
         }
-
-        Console.WriteLine();
     }
 }
 
@@ -149,50 +127,49 @@ class Program
 {
     static void Main(string[] args)
     {
-        MyMatrix xi = new MyMatrix(3, 3, 10, 20);
-        xi.Show();
+        MyMatrix matrix = new MyMatrix(3, 3, 10, 20);
+        matrix.Show();
 
-        xi[0, 0] = 5;
-        xi.Show();
+        matrix[1, 1] = 0;
+        matrix.Show();
 
-        xi.Fill();
-        xi.Show();
+        matrix.Fill();
+        matrix.Show();
 
-        xi.ChangeSize(5, 5);
-        xi.Show();
+        matrix.ChangeSize(5, 5);
+        matrix.Show();
 
-        xi.Fill();
-        xi.Show();
+        matrix.Fill();
+        matrix.Show();
 
-        int[] a = new int[] { 1, 2 };
-        int[] b = new int[] { 2, 3 };
-        xi.ShowPartial(a, b);
+        int[] a = new int[] { 0, 0 };
+        int[] b = new int[] { 3, 2 };
+        matrix.ShowPartial(a, b);
 
 
         int lines;
         int columns;
-        int firstArg;
-        int secondArg;
+        int randBegin;
+        int randEnd;
 
-        Console.WriteLine("Количтество столбцов: ");
+        Console.WriteLine("Введите количтество столбцов: ");
         lines = int.Parse(Console.ReadLine());
-        Console.WriteLine("Количтество строк: ");
+        Console.WriteLine("Введите количтество строк: ");
         columns = int.Parse(Console.ReadLine());
-        Console.WriteLine("Нижняя граница слуайных чисел: ");
-        firstArg = int.Parse(Console.ReadLine());
-        Console.WriteLine("Верхняя граница слуайных чисел: ");
-        secondArg = int.Parse(Console.ReadLine());
+        Console.WriteLine("Введите минимальное значение элементов:");
+        randBegin = int.Parse(Console.ReadLine());
+        Console.WriteLine("Введите максимальное значение элементов:");
+        randEnd = int.Parse(Console.ReadLine());
 
-        MyMatrix newMat = new MyMatrix(lines, columns, firstArg, secondArg);
-        newMat.Show();
+        MyMatrix myMatrix = new MyMatrix(lines, columns, randBegin, randEnd);
+        myMatrix.Show();
 
-        Console.WriteLine("Ихменим размер матрицы! ");
-        Console.WriteLine("Количтество столбцов: ");
+        Console.WriteLine("Введите новое количтество столбцов: ");
         lines = int.Parse(Console.ReadLine());
-        Console.WriteLine("Количтество строк: ");
+        Console.WriteLine("Введите новое количтество строк: ");
         columns = int.Parse(Console.ReadLine());
 
-        newMat.ChangeSize(lines, columns);
-        newMat.Show();
+        myMatrix.ChangeSize(lines, columns);
+        myMatrix.Show();
     }
 }

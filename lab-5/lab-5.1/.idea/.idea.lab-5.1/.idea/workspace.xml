@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fc480ce-c8a4-4345-8be6-9efcc102d7f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab-5.1/bin/Debug/net6.0/lab-5.1.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-5.1/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-5.1/obj/Debug/net6.0/refint/lab-5.1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab-4/lab-4.1/.idea/.idea.lab-4.1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/Debug/net6.0/lab-4.1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/Debug/net6.0/lab-4.1.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/Debug/net6.0/lab-4.1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/Debug/net6.0/lab-4.1.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/Debug/net6.0/lab-4.1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/Debug/net6.0/lab-4.1.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/lab-4.1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/lab-4.1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab-4/lab-4.1/lab-4.1/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lab-5.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab-5.1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-5.1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/lab-5.1/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-5.1/bin/Debug/net6.0/lab-5.1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-5.1/bin/Debug/net6.0/lab-5.1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-5.1/bin/Debug/net6.0/lab-5.1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/lab-5.1/bin/Debug/net6.0/lab-5.1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-5.1/bin/Debug/net6.0/ref/lab-5.1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-5.1/bin/Debug/net6.0/ref/lab-5.1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-5.1/obj/Debug/net6.0/lab-5.1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/lab-5.1/obj/Debug/net6.0/lab-5.1.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-5.1/obj/Debug/net6.0/lab-5.1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/lab-5.1/obj/Debug/net6.0/lab-5.1.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-5.1/obj/Debug/net6.0/lab-5.1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/lab-5.1/obj/Debug/net6.0/lab-5.1.csproj.CoreCompileInputs.cache" afterDir="false" />
@@ -43,15 +50,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/user/Документы/GitHub/csLabs/lab-4/lab-4.1",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="lab-5.1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -84,6 +92,7 @@
       <workItem from="1665470579049" duration="27000" />
       <workItem from="1666261834134" duration="797000" />
       <workItem from="1666262696867" duration="1000" />
+      <workItem from="1666263502683" duration="1697000" />
     </task>
     <servers />
   </component>

@@ -30,7 +30,7 @@
         size = _keys.Count();
     }
 
-    public void Add(TKey[] _keys, TValue[] _values)
+    public void Push(TKey[] _keys, TValue[] _values)
     {
         TKey[] tmpKeys = new TKey[_keys.Count() + size];
         TValue[] tmpValues = new TValue[_values.Count() + size];
@@ -91,10 +91,7 @@
     {
         for (int i = 0; i < size; ++i)
         {
-            Console.Write(keys[i]);
-            Console.Write(" : ");
-            Console.Write(values[i]);
-            Console.WriteLine();
+            Console.WriteLine($"{keys[i]} : {values[i]}");
         }
     }
 
@@ -102,7 +99,7 @@
     {
         get
         {
-            Console.WriteLine("Размер: ");
+            Console.Write("size: ");
             return size;
         }
     }
@@ -120,41 +117,41 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[] arr1 = new int[] { 1, 44, 55, 99, 10 };
-        string[] arr2 = new string[] { "art", "usd", "333", "marc", "c++" };
+        int[] arr1 = new int[] { 1, 2, 3, 5, 7 };
+        string[] arr2 = new string[] { "aaa", "bbb", "333", "ccc", "awe#24s" };
 
-        MyDictionary<int, string> intString = new MyDictionary<int, string>(arr1, arr2);
-        Console.WriteLine(intString.Size);
-        intString.Print();
-        Console.WriteLine("======================");
+        MyDictionary<int, string> dict = new MyDictionary<int, string>(arr1, arr2);
+        dict.Print();
+        Console.WriteLine(dict.Size);
+        Console.WriteLine();
 
-        int[] arr3 = new int[] { 6, 34, 88, 121, 46 };
-        string[] arr4 = new string[] { "js", "go", "python", "java", "c#" };
+        int[] arr3 = new int[] { 10, 14, 12, 15, 17 };
+        string[] arr4 = new string[] { "aboba", "biba", "boba", "qwerty", "123" };
 
-        intString.Add(arr3, arr4);
-        Console.WriteLine(intString.Size);
-        intString.Print();
-        Console.WriteLine("======================");
+        dict.Push(arr3, arr4);
+        dict.Print();
+        Console.WriteLine(dict.Size);
+        Console.WriteLine();
 
-        foreach (string elem in intString)
+        foreach (string d in dict)
         {
-            Console.WriteLine(elem);
+            Console.Write($"{d} ");
         }
 
-        Console.WriteLine("======================");
+        Console.WriteLine();
 
 
         string[] stringKey = new string[] { "one", "two", "three", "four", "five" };
-        double[] doubleVal = new double[] { 1.22, 9.323, 8.901, 99, 10.101010 };
+        double[] doubleVal = new double[] { 1.23, 4.56, 7.777, 3, 10.101010 };
 
-        MyDictionary<string, double> stringDouble = new MyDictionary<string, double>(stringKey, doubleVal);
-        foreach (double elem in stringDouble)
+        MyDictionary<string, double> dict2 = new MyDictionary<string, double>(stringKey, doubleVal);
+        foreach (double d in dict2)
         {
-            Console.WriteLine(elem);
+            Console.Write($"{d} ");
         }
 
-        Console.WriteLine("======================");
+        Console.WriteLine("\n\nelem \"two\": ");
 
-        Console.WriteLine(stringDouble["two"]);
+        Console.WriteLine(dict2["two"]);
     }
 }
