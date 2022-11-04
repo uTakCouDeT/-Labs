@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\RiderProjects\\lab-3.3\\lab-3.3\\lab-3.3.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-3\\lab-3.3\\lab-3.3\\lab-3.3.csproj",
       "projectName": "lab-3.3",
-      "projectPath": "C:\\Users\\user\\RiderProjects\\lab-3.3\\lab-3.3\\lab-3.3.csproj",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-3\\lab-3.3\\lab-3.3\\lab-3.3.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\RiderProjects\\lab-3.3\\lab-3.3\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-3\\lab-3.3\\lab-3.3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
