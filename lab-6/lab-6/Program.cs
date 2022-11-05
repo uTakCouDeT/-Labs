@@ -6,8 +6,8 @@ public class Weather
 {
     public string Country { set; get; }
     public string Name { set; get; }
-    private double Temp { set; get; }
-    private string Description { set; get; }
+    public double Temp { set; get; }
+    public string Description { set; get; }
 
     public Weather()
     {
@@ -54,6 +54,18 @@ public class Weather
         }
     }
 
+    public string ToString()
+    {
+        string str = "";
+        if (Country != "")
+        {
+            str += $"{Country}, {Name}: ";
+        }
+
+        str += $"{Temp}°C ({Description})";
+        return str;
+    }
+
     public void Print()
     {
         if (Country != "")
@@ -65,12 +77,34 @@ public class Weather
     }
 }
 
+public enum WeatherComparerType
+{
+    Temp,
+    Description
+}
+
+class WeatherComparer : IComparer<Weather>
+{
+    private readonly WeatherComparerType _weatherComparerType;
+
+    public WeatherComparer(WeatherComparerType comparerType)
+    {
+        _weatherComparerType = comparerType;
+    }
+
+    public int Compare(Weather a, Weather b)
+    {
+        return _weatherComparerType switch
+        {
+            WeatherComparerType.Description => String.Compare(a.Description, b.Description, StringComparison.Ordinal),
+            WeatherComparerType.Temp => a.Temp.CompareTo(b.Temp),
+            _ => 0
+        };
+    }
+}
+
 class Program
 {
-    static bool NameLongerThanFour(string name)
-    {
-        return name.Length > 4;
-    }
     static void Main(string[] args)
     {
         const string apiKey = "94b3e2fa33ad3e53428fa6b749f38213";
@@ -101,18 +135,63 @@ class Program
 
                 weather = new Weather(txtJson);
             }
+
             weathers.Add(weather);
             Console.Clear();
             Console.WriteLine($"\n                     Loading {2 * (i + 1)}%");
             Console.WriteLine("||" + new string('=', i) + new string('-', 50 - i) + "||");
         }
 
-        var query = weathers.Where(new Func<Weather, bool>());
-        
         Console.Clear();
-        for (int i = 0; i < 50; i++)
+        Console.WriteLine("Вся коллекция: ");
+        foreach (var item in weathers)
         {
-            weathers[i].Print();
+            item.Print();
+        }
+        
+        foreach (var item in weathers.OrderBy(weather => weather.Temp))
+        {
+            //item.Print();
+        }
+
+        Console.WriteLine("\n1. Страна с максимальной и минимальной температурой: ");
+        Weather min = weathers.Min(new WeatherComparer(WeatherComparerType.Temp))!;
+        Weather max = weathers.Max(new WeatherComparer(WeatherComparerType.Temp))!;
+        min.Print();
+        max.Print();
+
+        Console.WriteLine(
+            $"\n2. Средняя температура в мире: {Math.Round(weathers.Average(weather => weather.Temp), 2)}");
+
+        Console.WriteLine($"\n3. Количество стран в коллекции: {weathers.Count}");
+
+        Console.WriteLine("\n4. Первая найденная страна, где Description: \"clear sky\", \"rain\", \"few clouds\": ");
+
+        if (weathers.Any(weather => weather.Description == "clear sky"))
+        {
+            weathers.First(weather => weather.Description == "clear sky").Print();
+        }
+        else
+        {
+            Console.WriteLine("no description of \"clear sky\"");
+        }
+
+        if (weathers.Any(weather => weather.Description == "rain"))
+        {
+            weathers.First(weather => weather.Description == "rain").Print();
+        }
+        else
+        {
+            Console.WriteLine("no description of \"rain\"");
+        }
+
+        if (weathers.Any(weather => weather.Description == "few clouds"))
+        {
+            weathers.First(weather => weather.Description == "few clouds").Print();
+        }
+        else
+        {
+            Console.WriteLine("no description of \"few clouds\"");
         }
     }
 }
