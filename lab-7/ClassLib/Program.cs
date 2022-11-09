@@ -1,8 +1,4 @@
-﻿using System.Globalization;
-using System.Linq;
-using System.Net;
-
-[CommentAttibute("Animal class")]
+﻿[CommentAttibute("Animal class")]
 abstract class Animal
 {
     public string Country { set; get; }

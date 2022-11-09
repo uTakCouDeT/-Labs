@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "lab-7/1.0.0": {
+        "dependencies": {
+          "AnimalLib": "1.0.0"
+        },
         "runtime": {
           "lab-7.dll": {}
+        }
+      },
+      "AnimalLib/1.0.0": {
+        "runtime": {
+          "AnimalLib.dll": {}
         }
       }
     }
   },
   "libraries": {
     "lab-7/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AnimalLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
