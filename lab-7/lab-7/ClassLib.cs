@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Net;
 
+[CommentAttibute("Animal class")]
 abstract class Animal
 {
     public string Country { set; get; }
@@ -49,6 +50,7 @@ abstract class Animal
     }
 }
 
+[CommentAttibute("Animal classification enum")]
 public enum eClassificationAnimal
 {
     Herbivores,
@@ -56,6 +58,7 @@ public enum eClassificationAnimal
     Omnivores
 }
 
+[CommentAttibute("Favorite food enum")]
 public enum eFavoriteFood
 {
     Meat,
@@ -63,9 +66,10 @@ public enum eFavoriteFood
     Everything
 }
 
+[CommentAttibute("Cow class")]
 class Cow : Animal
 {
-    Cow()
+    public Cow()
     {
         WhatAnimal = "Cow";
         HideFromOtherAnimals = false;
@@ -82,9 +86,10 @@ class Cow : Animal
     }
 }
 
+[CommentAttibute("Lion class")]
 class Lion : Animal
 {
-    Lion()
+    public Lion()
     {
         WhatAnimal = "Lion";
         HideFromOtherAnimals = false;
@@ -101,9 +106,10 @@ class Lion : Animal
     }
 }
 
+[CommentAttibute("Pig class")]
 class Pig : Animal
 {
-    Pig()
+    public Pig()
     {
         HideFromOtherAnimals = false;
         WhatAnimal = "Pig";
@@ -120,10 +126,13 @@ class Pig : Animal
     }
 }
 
-class Program
+class CommentAttibute : Attribute
 {
-    static void Main(string[] args)
+    public string Comment { get; }
+
+    public CommentAttibute()
     {
-        Console.WriteLine("Hello");
     }
+
+    public CommentAttibute(string comment) => Comment = comment;
 }
