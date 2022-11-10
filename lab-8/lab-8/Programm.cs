@@ -48,7 +48,7 @@ public class Program
                 byte[] buffer = new byte[fstream.Length];
                 fstream.ReadAsync(buffer, 0, buffer.Length);
                 string textFromFile = Encoding.Default.GetString(buffer);
-                Console.WriteLine($" - Текст из файла:\n{textFromFile}");
+                Console.WriteLine($" - Текст из файла: {textFromFile}");
             }
 
             Console.WriteLine("Архивировать данный файл? (y/n)");
@@ -57,7 +57,6 @@ public class Program
                 string sourceFile = info.FullName;
                 string compressedFile = info.FullName.Substring(0, info.FullName.IndexOf(info.Name)) +
                                         info.Name.Substring(0, info.Name.IndexOf(".")) + ".gz";
-                string targetFile = info.FullName.Substring(0, info.FullName.IndexOf(info.Name)) + "aboba.txt";
 
                 // создание сжатого файла
                 CompressAsync(sourceFile, compressedFile);
