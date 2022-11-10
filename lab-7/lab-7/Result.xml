@@ -3,19 +3,20 @@
   <eClassificationAnimal> Herbivores Carnivores Omnivores </eClassificationAnimal>
   <eFavoriteFood> Meat Plant Everything </eFavoriteFood>
   <Classes>
-    <Animal />
+    <Animal Attribute="Animal class">
+      <Abstract> Abstract class </Abstract>
+      <Proporties> Country HideFromOtherAnimals Name WhatAnimal </Proporties>
+      <Methods> Deconstruct GetClassificationAnimal GetFavoriteFood SayHello </Methods>
+    </Animal>
     <Cow Attribute="Cow class">
-      <Field> </Field>
       <Proporties> Country HideFromOtherAnimals Name WhatAnimal </Proporties>
       <Methods> GetFavoriteFood SayHello Deconstruct GetClassificationAnimal </Methods>
     </Cow>
     <Lion Attribute="Lion class">
-      <Field> </Field>
       <Proporties> Country HideFromOtherAnimals Name WhatAnimal </Proporties>
       <Methods> GetFavoriteFood SayHello Deconstruct GetClassificationAnimal </Methods>
     </Lion>
     <Pig Attribute="Pig class">
-      <Field> </Field>
       <Proporties> Country HideFromOtherAnimals Name WhatAnimal </Proporties>
       <Methods> GetFavoriteFood SayHello Deconstruct GetClassificationAnimal </Methods>
     </Pig>
