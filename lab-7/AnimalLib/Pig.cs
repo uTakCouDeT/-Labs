@@ -1,7 +1,7 @@
 namespace AnimalLib;
 
-[CommentAttibute("Pig class")]
-class Pig : Animal
+[Comment("Pig class")]
+public class Pig : Animal
 {
     public Pig()
     {
@@ -9,12 +9,12 @@ class Pig : Animal
         WhatAnimal = "Pig";
     }
 
-    public eFavoriteFood GetFavoriteFood()
+    public override eFavoriteFood GetFavoriteFood()
     {
         return eFavoriteFood.Everything;
     }
 
-    public void SayHello()
+    public override void SayHello()
     {
         Console.WriteLine("Hello, Im Pig!");
     }

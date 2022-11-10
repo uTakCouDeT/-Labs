@@ -1,6 +1,6 @@
 namespace AnimalLib;
 
-[CommentAttibute("Animal classification enum")]
+[Comment("Animal classification enum")]
 public enum eClassificationAnimal
 {
     Herbivores,

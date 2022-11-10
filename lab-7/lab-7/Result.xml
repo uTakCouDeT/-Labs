@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AnimalLib>
+  <eClassificationAnimal> Herbivores Carnivores Omnivores </eClassificationAnimal>
+  <eFavoriteFood> Meat Plant Everything </eFavoriteFood>
+  <Classes>
+    <Animal />
+    <Cow Attribute="Cow class">
+      <Field> </Field>
+      <Proporties> Country HideFromOtherAnimals Name WhatAnimal </Proporties>
+      <Methods> GetFavoriteFood SayHello Deconstruct GetClassificationAnimal </Methods>
+    </Cow>
+    <Lion Attribute="Lion class">
+      <Field> </Field>
+      <Proporties> Country HideFromOtherAnimals Name WhatAnimal </Proporties>
+      <Methods> GetFavoriteFood SayHello Deconstruct GetClassificationAnimal </Methods>
+    </Lion>
+    <Pig Attribute="Pig class">
+      <Field> </Field>
+      <Proporties> Country HideFromOtherAnimals Name WhatAnimal </Proporties>
+      <Methods> GetFavoriteFood SayHello Deconstruct GetClassificationAnimal </Methods>
+    </Pig>
+  </Classes>
+</AnimalLib>

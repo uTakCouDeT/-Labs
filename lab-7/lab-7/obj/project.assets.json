@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "/home/user/.nuget/packages/": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/user/Документы/GitHub/csLabs/lab-7/lab-7/lab-7.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-7\\lab-7\\lab-7.csproj",
       "projectName": "lab-7",
-      "projectPath": "/home/user/Документы/GitHub/csLabs/lab-7/lab-7/lab-7.csproj",
-      "packagesPath": "/home/user/.nuget/packages/",
-      "outputPath": "/home/user/Документы/GitHub/csLabs/lab-7/lab-7/obj/",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-7\\lab-7\\lab-7.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-7\\lab-7\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/user/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -51,8 +51,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/user/Документы/GitHub/csLabs/lab-7/AnimalLib/AnimalLib.csproj": {
-              "projectPath": "/home/user/Документы/GitHub/csLabs/lab-7/AnimalLib/AnimalLib.csproj"
+            "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-7\\AnimalLib\\AnimalLib.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-7\\AnimalLib\\AnimalLib.csproj"
             }
           }
         }
@@ -72,7 +72,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -81,7 +82,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.108/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\user\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

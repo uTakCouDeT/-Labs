@@ -1,7 +1,7 @@
 namespace AnimalLib;
 
-[CommentAttibute("Animal class")]
-abstract class Animal
+[Comment("Animal class")]
+public abstract class Animal
 {
     public string Country { set; get; }
     public bool HideFromOtherAnimals { set; get; }
@@ -32,17 +32,17 @@ abstract class Animal
         WhatAnimal = "";
     }
 
-    public eClassificationAnimal GetClassificationAnimal()
+    public virtual eClassificationAnimal GetClassificationAnimal()
     {
         return eClassificationAnimal.Omnivores;
     }
 
-    public eFavoriteFood GetFavoriteFood()
+    public virtual eFavoriteFood GetFavoriteFood()
     {
         return eFavoriteFood.Everything;
     }
 
-    public void SayHello()
+    public virtual void SayHello()
     {
         Console.WriteLine("Hello!");
     }

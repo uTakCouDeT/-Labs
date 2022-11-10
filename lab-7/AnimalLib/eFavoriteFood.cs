@@ -1,6 +1,6 @@
 namespace AnimalLib;
 
-[CommentAttibute("Favorite food enum")]
+[Comment("Favorite food enum")]
 public enum eFavoriteFood
 {
     Meat,
