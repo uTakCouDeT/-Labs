@@ -1,7 +1,7 @@
 namespace AnimalLib;
 
 [Comment("Animal class")]
-public abstract class Animal
+public class Animal
 {
     public string Country { set; get; }
     public bool HideFromOtherAnimals { set; get; }

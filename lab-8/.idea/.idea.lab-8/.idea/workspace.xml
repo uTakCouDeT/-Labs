@@ -6,15 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="f0936cdd-d258-4e2d-9536-060eaf55acbd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lab-8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab-8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-8.sln" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-8/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-8/lab-8.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/lab-8.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/Animal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/bin/Debug/net6.0/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/bin/Debug/net6.0/AnimalLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/bin/Debug/net6.0/AnimalLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/bin/Debug/net6.0/AnimalLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/ref/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/ref/AnimalLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/refint/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/refint/AnimalLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/Programm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/Programm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/Result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/Result.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/AnimalLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/AnimalLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/AnimalLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/lab-8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/lab-8.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/lab-8.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/lab-8.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-8/obj/lab-8.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/lab-8.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-8/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-8/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-8/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-8/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/ref/lab-8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/ref/lab-8.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/refint/lab-8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/refint/lab-8.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +78,7 @@
       <workItem from="1668051658290" duration="61000" />
       <workItem from="1668051807888" duration="1000" />
       <workItem from="1668051923050" duration="34000" />
+      <workItem from="1668069987315" duration="7220000" />
     </task>
     <servers />
   </component>
