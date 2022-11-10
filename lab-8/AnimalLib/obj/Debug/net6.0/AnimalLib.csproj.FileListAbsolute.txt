@@ -1,0 +1,12 @@
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\bin\Debug\net6.0\AnimalLib.deps.json
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\bin\Debug\net6.0\AnimalLib.dll
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\bin\Debug\net6.0\AnimalLib.pdb
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\obj\Debug\net6.0\AnimalLib.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\obj\Debug\net6.0\AnimalLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\obj\Debug\net6.0\AnimalLib.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\obj\Debug\net6.0\AnimalLib.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\obj\Debug\net6.0\AnimalLib.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\obj\Debug\net6.0\AnimalLib.dll
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\obj\Debug\net6.0\refint\AnimalLib.dll
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\obj\Debug\net6.0\AnimalLib.pdb
+C:\Users\user\Documents\GitHub\csLabs\lab-8\AnimalLib\obj\Debug\net6.0\ref\AnimalLib.dll

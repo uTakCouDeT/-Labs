@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab-8", "lab-8\lab-8.csproj", "{64EEB19B-2092-4934-8E65-0C6D3F0DFD3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab-8", "lab-8\lab-8.csproj", "{BEC8BE8E-61F2-4069-BF82-8832BACD3DE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalLib", "AnimalLib\AnimalLib.csproj", "{9D088080-EDD8-4C87-8BB7-6E30483034C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{64EEB19B-2092-4934-8E65-0C6D3F0DFD3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64EEB19B-2092-4934-8E65-0C6D3F0DFD3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64EEB19B-2092-4934-8E65-0C6D3F0DFD3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64EEB19B-2092-4934-8E65-0C6D3F0DFD3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC8BE8E-61F2-4069-BF82-8832BACD3DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC8BE8E-61F2-4069-BF82-8832BACD3DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC8BE8E-61F2-4069-BF82-8832BACD3DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC8BE8E-61F2-4069-BF82-8832BACD3DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D088080-EDD8-4C87-8BB7-6E30483034C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D088080-EDD8-4C87-8BB7-6E30483034C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D088080-EDD8-4C87-8BB7-6E30483034C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D088080-EDD8-4C87-8BB7-6E30483034C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
