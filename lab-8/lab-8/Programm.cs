@@ -1,7 +1,6 @@
-using System.Reflection;
 using System.Xml.Serialization;
-using System.Xml.Linq;
 using System.IO.Compression;
+using System.Text;
 using AnimalLib;
 
 public class Program
@@ -11,7 +10,7 @@ public class Program
         Animal animal = new Animal("Russia", true, "Ivan", "Bear");
 
         XmlSerializer xmlSerializer = new XmlSerializer(typeof(Animal));
-        string path = "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-8\\lab-8\\Result.xml";
+        string path = "/home/user/Документы/GitHub/csLabs/lab-8/lab-8/Result.xml";
 
         using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
         {
@@ -36,15 +35,21 @@ public class Program
         Console.WriteLine("Введите имя файла:");
         //string fileName = Console.ReadLine();
 
-        string catalog = @"C:\Users\user\Documents\GitHub\csLabs\lab-8";
-        string fileName = "Result.xml";
+        string catalog = "/home/user/Документы/GitHub/csLabs/lab-8/lab-8/";
+        string fileName = "Aboba.txt";
 
         foreach (string file in Directory.EnumerateFiles(catalog, fileName, SearchOption.AllDirectories))
         {
             FileInfo info = new FileInfo(file);
             Console.WriteLine($"{info.Name}\n - Путь: {info.FullName}\n - Размер: {info.Length} байт");
 
-            // Тут будет вывод файла
+            using (FileStream fstream = File.OpenRead(info.FullName))
+            {
+                byte[] buffer = new byte[fstream.Length];
+                fstream.ReadAsync(buffer, 0, buffer.Length);
+                string textFromFile = Encoding.Default.GetString(buffer);
+                Console.WriteLine($" - Текст из файла:\n{textFromFile}");
+            }
 
             Console.WriteLine("Архивировать данный файл? (y/n)");
             if (Console.ReadLine() == "y")
@@ -52,8 +57,7 @@ public class Program
                 string sourceFile = info.FullName;
                 string compressedFile = info.FullName.Substring(0, info.FullName.IndexOf(info.Name)) +
                                         info.Name.Substring(0, info.Name.IndexOf(".")) + ".gz";
-                string targetFile = info.FullName.Substring(0, info.FullName.IndexOf(info.Name)) + "aboba.xml";
-                Console.WriteLine(targetFile);
+                string targetFile = info.FullName.Substring(0, info.FullName.IndexOf(info.Name)) + "aboba.txt";
 
                 // создание сжатого файла
                 CompressAsync(sourceFile, compressedFile);

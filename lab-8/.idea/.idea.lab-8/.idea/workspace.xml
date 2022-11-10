@@ -5,25 +5,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0936cdd-d258-4e2d-9536-060eaf55acbd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lab-8/Aboba.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-6/lab-6/obj/Debug/net6.0/lab-6.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-6/lab-6/obj/Debug/net6.0/lab-6.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-6/lab-6/obj/Debug/net6.0/lab-6.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-6/lab-6/obj/Debug/net6.0/lab-6.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-6/lab-6/obj/lab-6.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-6/lab-6/obj/lab-6.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-6/lab-6/obj/lab-6.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-6/lab-6/obj/lab-6.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-6/lab-6/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-6/lab-6/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-6/lab-6/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-6/lab-6/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-6/lab-6/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-6/lab-6/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-6/lab-6/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-6/lab-6/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/bin/Debug/net6.0/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/bin/Debug/net6.0/AnimalLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/bin/Debug/net6.0/AnimalLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/bin/Debug/net6.0/AnimalLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/bin/Debug/net6.0/ref/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/bin/Debug/net6.0/ref/AnimalLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/AnimalLib.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/AnimalLib.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/AnimalLib.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/AnimalLib.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/Debug/net6.0/AnimalLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/AnimalLib/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/Programm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/Programm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/bin/Debug/net6.0/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/bin/Debug/net6.0/AnimalLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/bin/Debug/net6.0/AnimalLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/bin/Debug/net6.0/AnimalLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/bin/Debug/net6.0/lab-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/bin/Debug/net6.0/lab-7.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/bin/Debug/net6.0/lab-7.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/bin/Debug/net6.0/lab-7.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/lab-7.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/ref/lab-7.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/Debug/net6.0/ref/lab-7.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/lab-7.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/lab-7.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/lab-7.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/lab-7.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-7/lab-7/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-7/lab-7/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lab-8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab-8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalLib/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/Animal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimalLib/bin/Debug/net6.0/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/bin/Debug/net6.0/AnimalLib.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimalLib/bin/Debug/net6.0/AnimalLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/bin/Debug/net6.0/AnimalLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/AnimalLib.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/AnimalLib.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/AnimalLib.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/AnimalLib.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/AnimalLib.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/ref/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/ref/AnimalLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/refint/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/Debug/net6.0/refint/AnimalLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AnimalLib/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-8/Programm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/Programm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-8/Result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/Result.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/Result.gz" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/Result.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/AnimalLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/AnimalLib.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/AnimalLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/AnimalLib.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/lab-8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/lab-8.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/lab-8.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/bin/Debug/net6.0/lab-8.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/lab-8.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/ref/lab-8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/ref/lab-8.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/refint/lab-8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/Debug/net6.0/refint/lab-8.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/lab-8.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/lab-8.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/lab-8.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/lab-8.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-8/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/lab-8/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +140,8 @@
       <workItem from="1668051807888" duration="1000" />
       <workItem from="1668051923050" duration="34000" />
       <workItem from="1668069987315" duration="7220000" />
+      <workItem from="1668081258411" duration="56000" />
+      <workItem from="1668081322483" duration="1094000" />
     </task>
     <servers />
   </component>

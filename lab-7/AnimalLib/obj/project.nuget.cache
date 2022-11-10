@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "80abC0RmtofXJ+rpKibKtBX38sZ5MUGwKpRNPMOiQGbNnEj05m9mMddfoYKBvg/5zj8Rtsh6J0OQvgpSEBVAWQ==",
+  "dgSpecHash": "IKVprSPjul2MLCNZbgviw9IhJY3QMpPmSZtEcX9uF9j1szmQ0VbX9xNzI6fqmbWPFi91qbH67tRlzoj7bw6iYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-7\\AnimalLib\\AnimalLib.csproj",
+  "projectFilePath": "/home/user/Документы/GitHub/csLabs/lab-7/AnimalLib/AnimalLib.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

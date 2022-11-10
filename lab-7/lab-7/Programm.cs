@@ -81,6 +81,6 @@ public class Program
 
         othr.Add(clss);
         xDoc.Add(othr);
-        xDoc.Save("C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-7\\lab-7\\Result.xml");
+        xDoc.Save("/home/user/Документы/GitHub/csLabs/lab-7/lab-7/Result.xml");
     }
 }
