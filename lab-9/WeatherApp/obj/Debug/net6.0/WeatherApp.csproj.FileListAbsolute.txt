@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\bin\Debug\net6.0\WeatherApp.exe
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\bin\Debug\net6.0\WeatherApp.deps.json
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\bin\Debug\net6.0\WeatherApp.runtimeconfig.json
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\bin\Debug\net6.0\WeatherApp.dll
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\bin\Debug\net6.0\WeatherApp.pdb
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\obj\Debug\net6.0\WeatherApp.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\obj\Debug\net6.0\WeatherApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\obj\Debug\net6.0\WeatherApp.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\obj\Debug\net6.0\WeatherApp.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\obj\Debug\net6.0\WeatherApp.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\obj\Debug\net6.0\WeatherApp.dll
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\obj\Debug\net6.0\refint\WeatherApp.dll
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\obj\Debug\net6.0\WeatherApp.pdb
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\obj\Debug\net6.0\WeatherApp.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\csLabs\lab-9\WeatherApp\obj\Debug\net6.0\ref\WeatherApp.dll
