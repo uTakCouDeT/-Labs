@@ -1,0 +1,13 @@
+﻿<Window x:Class="Neeww.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Neeww"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Height="50" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Узнать погоду" FontSize="15" FontFamily="Calibri" Margin="320,185,323.6,185" Click="Button_Click"></Button>
+        <ComboBox Name="comboBox1" Margin="64,185,538.6,207"  SelectionChanged="comboBox1_SelectionChanged"></ComboBox>
+    </Grid>
+</Window>
