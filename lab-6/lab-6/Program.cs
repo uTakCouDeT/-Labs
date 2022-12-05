@@ -105,93 +105,129 @@ class WeatherComparer : IComparer<Weather>
 
 class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
+        const string filePath = @"C:\Users\user\Documents\GitHub\csLabs\lab-6\lab-6\weathers.txt";
         const string apiKey = "94b3e2fa33ad3e53428fa6b749f38213";
         Random rnd = new Random();
         List<Weather> weathers = new List<Weather>();
-        for (int i = 0; i < 50; i++)
+        Console.WriteLine("[1] - API");
+        Console.WriteLine("[2] - File");
+        Console.WriteLine("[3] - API -> file");
+
+        var flag = Console.ReadLine();
+
+        if (flag == "1" || flag == "3")
         {
-            Weather weather = new Weather();
-            while (weather.Country == "")
+            for (int i = 0; i < 50; i++)
             {
-                double lat = rnd.NextDouble() * 180 - 90;
-                double lon = rnd.NextDouble() * 360 - 180;
+                Weather weather = new Weather();
+                string txtJson = "";
 
-                string apiRequest =
-                    $"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={apiKey}";
-
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(apiRequest);
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-
-                string txtJson;
-                using (Stream stream = response.GetResponseStream())
+                while (weather.Country == "")
                 {
-                    using (StreamReader reader = new StreamReader(stream))
+                    double lat = rnd.NextDouble() * 180 - 90;
+                    double lon = rnd.NextDouble() * 360 - 180;
+
+                    string apiRequest =
+                        $"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={apiKey}";
+
+                    HttpWebRequest request = (HttpWebRequest)WebRequest.Create(apiRequest);
+                    HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
+                    using (Stream stream = response.GetResponseStream())
                     {
-                        txtJson = reader.ReadToEnd();
+                        using (StreamReader reader = new StreamReader(stream))
+                        {
+                            txtJson = reader.ReadToEnd();
+                        }
+                    }
+
+                    weather = new Weather(txtJson);
+                }
+
+                if (flag == "3")
+                {
+                    using (StreamWriter writer = new StreamWriter(filePath, true))
+                    {
+                        await writer.WriteLineAsync(txtJson);
                     }
                 }
 
-                weather = new Weather(txtJson);
+                weathers.Add(weather);
+                Console.Clear();
+                Console.WriteLine($"\n                     Loading {2 * (i + 1)}%");
+                Console.WriteLine("||" + new string('=', i) + new string('-', 50 - i) + "||");
             }
+        }
 
-            weathers.Add(weather);
-            Console.Clear();
-            Console.WriteLine($"\n                     Loading {2 * (i + 1)}%");
-            Console.WriteLine("||" + new string('=', i) + new string('-', 50 - i) + "||");
+        if (flag == "2")
+        {
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                string? line;
+                while ((line = await reader.ReadLineAsync()) != null)
+                {
+                    weathers.Add(new Weather(line));
+                }
+            }
         }
 
         Console.Clear();
-        Console.WriteLine("Вся коллекция: ");
-        foreach (var item in weathers)
-        {
-            item.Print();
-        }
-        
-        foreach (var item in weathers.OrderBy(weather => weather.Temp))
-        {
-            //item.Print();
-        }
 
-        Console.WriteLine("\n1. Страна с максимальной и минимальной температурой: ");
-        Weather min = weathers.Min(new WeatherComparer(WeatherComparerType.Temp))!;
-        Weather max = weathers.Max(new WeatherComparer(WeatherComparerType.Temp))!;
-        min.Print();
-        max.Print();
-
-        Console.WriteLine(
-            $"\n2. Средняя температура в мире: {Math.Round(weathers.Average(weather => weather.Temp), 2)}");
-
-        Console.WriteLine($"\n3. Количество стран в коллекции: {weathers.Count}");
-
-        Console.WriteLine("\n4. Первая найденная страна, где Description: \"clear sky\", \"rain\", \"few clouds\": ");
-
-        if (weathers.Any(weather => weather.Description == "clear sky"))
+        if (flag == "1" || flag == "2" || flag == "3")
         {
-            weathers.First(weather => weather.Description == "clear sky").Print();
-        }
-        else
-        {
-            Console.WriteLine("no description of \"clear sky\"");
-        }
+            Console.WriteLine("Вся коллекция: ");
+            foreach (var item in weathers)
+            {
+                item.Print();
+            }
 
-        if (weathers.Any(weather => weather.Description == "rain"))
-        {
-            weathers.First(weather => weather.Description == "rain").Print();
-        }
-        else
-        {
-            Console.WriteLine("no description of \"rain\"");
-        }
+            foreach (var item in weathers.OrderBy(weather => weather.Temp))
+            {
+                //item.Print();
+            }
 
-        if (weathers.Any(weather => weather.Description == "few clouds"))
-        {
-            weathers.First(weather => weather.Description == "few clouds").Print();
-        }
-        else
-        {
-            Console.WriteLine("no description of \"few clouds\"");
+            Console.WriteLine("\n1. Страна с максимальной и минимальной температурой: ");
+            Weather min = weathers.Min(new WeatherComparer(WeatherComparerType.Temp))!;
+            Weather max = weathers.Max(new WeatherComparer(WeatherComparerType.Temp))!;
+            min.Print();
+            max.Print();
+
+            Console.WriteLine(
+                $"\n2. Средняя температура в мире: {Math.Round(weathers.Average(weather => weather.Temp), 2)}");
+
+            Console.WriteLine($"\n3. Количество стран в коллекции: {weathers.Count}");
+
+            Console.WriteLine(
+                "\n4. Первая найденная страна, где Description: \"clear sky\", \"rain\", \"few clouds\": ");
+
+            if (weathers.Any(weather => weather.Description == "clear sky"))
+            {
+                weathers.First(weather => weather.Description == "clear sky").Print();
+            }
+            else
+            {
+                Console.WriteLine("no description of \"clear sky\"");
+            }
+
+            if (weathers.Any(weather => weather.Description == "rain"))
+            {
+                weathers.First(weather => weather.Description == "rain").Print();
+            }
+            else
+            {
+                Console.WriteLine("no description of \"rain\"");
+            }
+
+            if (weathers.Any(weather => weather.Description == "few clouds"))
+            {
+                weathers.First(weather => weather.Description == "few clouds").Print();
+            }
+            else
+            {
+                Console.WriteLine("no description of \"few clouds\"");
+            }
         }
     }
 }

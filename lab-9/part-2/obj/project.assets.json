@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-9\\WeatherApp\\WeatherApp.csproj",
-      "projectName": "WeatherApp",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-9\\WeatherApp\\WeatherApp.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-9\\part-2\\part-2.csproj",
+      "projectName": "part-2",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-9\\part-2\\part-2.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-9\\WeatherApp\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-9\\part-2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
