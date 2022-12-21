@@ -75,7 +75,7 @@ public class Weather
 
     public void RuPrint()
     {
-        Console.WriteLine($"{RuName}: {Temp}°C ({Description}) - {Name}");
+        Console.WriteLine($"{RuName}: {Temp}°C ({Description})");
     }
 }
 
@@ -140,8 +140,8 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        const string filePath = @"C:\Users\user\Documents\GitHub\csLabs\lab-9\part-2\weathers.txt";
-        const string cityPath = @"C:\Users\user\Documents\GitHub\csLabs\lab-9\part-2\city.txt";
+        const string filePath = @"../../../../part-2/weathers.txt";
+        const string cityPath = @"../../../../part-2/city.txt";
 
         Console.WriteLine("[1] - API");
         Console.WriteLine("[2] - File");
