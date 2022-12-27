@@ -11,7 +11,7 @@ class Program
         List<string> tickers = new List<string>();
         List<double> avg = new List<double>();
         object locker = new object();
-        using (StreamReader reader = new StreamReader(@"C:\Users\user\Documents\GitHub\csLabs\lab-9\lab-9\ticker.txt"))
+        using (StreamReader reader = new StreamReader(@"../../../../lab-9/ticker.txt"))
         {
             string line;
             while ((line = await reader.ReadLineAsync()) != null)
@@ -86,7 +86,7 @@ class Program
             }
         }
 
-        using (StreamWriter write = new StreamWriter(@"C:\Users\user\Documents\GitHub\csLabs\lab-9\lab-9\avg-ticker.txt"))
+        using (StreamWriter write = new StreamWriter(@"../../../../lab-9/avg-ticker.txt"))
         {
             for (int i = 0; i < avg.Count; ++i)
             {
