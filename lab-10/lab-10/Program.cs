@@ -56,7 +56,7 @@ class Program
                         avg.Add(average);
                     });
                 }
-                catch (System.Net.WebException)
+                catch (WebException)
                 {
                     Console.WriteLine($"{index}. {ticker} - None");
                 }
@@ -69,7 +69,7 @@ class Program
             {
                 lock (locker)
                 {
-                    write.WriteLine($"{tickers[i]}: {avg[i]}");
+                    write.WriteLine($"{i}. {tickers[i]} - {avg[i]}");
                 }
             }
         }
