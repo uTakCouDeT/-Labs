@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0Ozu5l+V5h12xa+7YqRcWlOG66eTJXBmJJTb/5kewUUU2UGb7mVJw49V24aynSPqRn+BPGa3vx02bXVau5qJhQ==",
+  "dgSpecHash": "Ri2z3X20Vhoxakdk13yp4t5uImK5ND7yKNVm1tNBaQVVaGzz2XNVAJDbVsTQkDQznXyj3g/0xhxI4ADArrkXLA==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-9\\part-2\\part-2.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.12\\microsoft.netcore.app.host.win-x64.6.0.12.nupkg.sha512"
+  ],
   "logs": []
 }
