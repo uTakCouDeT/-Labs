@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VJoPz6WAWmYYTRB7lhgiTbY+4WrwG/3+m5p5pRnf7Ntad2FJtAmo5inAdLOLlYTw5rK1PvUSVdewIqUoUMrvtg==",
+  "dgSpecHash": "CnzrpTr3Sqx+sFlHIGIFIZtsygkIyJAzPgXsJ6noP8Gqi14n2vw+ynzBhngbpV+tQNfFhbD0ttd6qCBXURcNzw==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-10\\lab-10\\lab-10.csproj",
   "expectedPackageFiles": [
@@ -51,7 +51,11 @@
     "C:\\Users\\user\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.12\\microsoft.netcore.app.host.win-x64.6.0.12.nupkg.sha512"
   ],
   "logs": []
 }

@@ -2,6 +2,7 @@
 using System.Net;
 using Microsoft.EntityFrameworkCore;
 
+
 class Program
 {
     internal class Ticker
