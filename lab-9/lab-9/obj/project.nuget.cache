@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "re5V78j54AdFH11wju8n52mABQJKGxOxLBmgZZznO15WejZF6gBtUInyw3hhIjZrxwX/KhMEZ3Y6H7ABfuMXag==",
+  "dgSpecHash": "IDYHA0nYKwOheP/Mq/whYf5Vo0B3xZXQHgzthjVFw30dwTLWW3kp14pMaPtXfBgo5urELXsQ/Re1wLE6ehI2HA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-9\\lab-9\\lab-9.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.12\\microsoft.netcore.app.host.win-x64.6.0.12.nupkg.sha512"
-  ],
+  "projectFilePath": "/home/user/csLabs/lab-9/lab-9/lab-9.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
