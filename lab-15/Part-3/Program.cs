@@ -1,64 +1,62 @@
 ﻿using System;
 using System.Data.SqlTypes;
 
-namespace sharp15
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        SingleRandomizer randomizerA = SingleRandomizer.getInstance("Randomizer - A");
+        Console.WriteLine(randomizerA.Next());
+        Console.WriteLine(randomizerA.name);
+
+        SingleRandomizer randomizerB = SingleRandomizer.getInstance("Randomizer - B");
+        Console.WriteLine(randomizerB.Next());
+        Console.WriteLine(randomizerB.name);
+
+        (new Thread(() =>
         {
-            SingleRandomizer s = SingleRandomizer.getInstance("первый");
-            Console.WriteLine(s.SingRandomize());
-            Console.WriteLine(s.check);
+            SingleRandomizer randomizerC = SingleRandomizer.getInstance("Randomizer - C1");
+            Console.WriteLine(randomizerC.Next());
+            Console.WriteLine(randomizerC.name);
+        })).Start();
 
-            (new Thread(() =>
-            {
-                SingleRandomizer s2 = SingleRandomizer.getInstance("четвёртый");
-                Console.WriteLine(s2.SingRandomize());
-                Console.WriteLine(s2.check);
-            })).Start();
+        SingleRandomizer randomizerC = SingleRandomizer.getInstance("Randomizer - C2");
+        Console.WriteLine(randomizerC.Next());
+        Console.WriteLine(randomizerC.name);
+    }
 
-            SingleRandomizer s1 = SingleRandomizer.getInstance("второй");
-            Console.WriteLine(s1.SingRandomize());
-            Console.WriteLine(s1.check);
 
-            SingleRandomizer s2 = SingleRandomizer.getInstance("третий");
-            Console.WriteLine(s2.SingRandomize());
-            Console.WriteLine(s2.check);
+    class SingleRandomizer
+    {
+        private static SingleRandomizer instance;
+        private Random rand;
+        public string name { get; set; }
+
+        private static object syncRoot = new Object();
+
+        protected SingleRandomizer(string name)
+        {
+            rand = new Random();
+            this.name = name;
         }
 
-
-        class SingleRandomizer
+        public int Next()
         {
-            private static SingleRandomizer instance;
-            private static object syncRoot = new Object();
-            public string check;
+            return rand.Next(0, 10000);
+        }
 
-            private SingleRandomizer(string name)
-            {
-                check = name;
-            }
-
-            public int SingRandomize()
-            {
-                Random rand = new Random();
-                return rand.Next(0, 10000);
-            }
-
-            public static SingleRandomizer getInstance(string name)
+        public static SingleRandomizer getInstance(string name)
+        {
+            if (instance == null)
             {
                 lock (syncRoot)
                 {
                     if (instance == null)
                         instance = new SingleRandomizer(name);
-                    else
-                    {
-                        Console.WriteLine("Нельзя создать новый экземпляр, остаётся тот же");
-                    }
                 }
-
-                return instance;
             }
+
+            return instance;
         }
     }
 }
