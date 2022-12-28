@@ -29,27 +29,27 @@ public partial class Lab10DbContext : DbContext
     {
         modelBuilder.Entity<Price>(entity =>
         {
-            entity.Property(e => e.id).HasColumnName("id");
-            entity.Property(e => e.date).HasColumnName("date");
-            entity.Property(e => e.price).HasColumnName("price");
-            entity.Property(e => e.tickerid).HasColumnName("tickerid");
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Date).HasColumnName("date");
+            entity.Property(e => e.Price1).HasColumnName("price");
+            entity.Property(e => e.TickerId).HasColumnName("tickerid");
 
-            entity.HasOne(d => d.Ticker).WithMany(p => p.Prices).HasForeignKey(d => d.tickerid);
+            entity.HasOne(d => d.Ticker).WithMany(p => p.Prices).HasForeignKey(d => d.TickerId);
         });
 
         modelBuilder.Entity<Ticker>(entity =>
         {
-            entity.Property(e => e.id).HasColumnName("id");
-            entity.Property(e => e.ticker).HasColumnName("ticker");
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Ticker1).HasColumnName("ticker");
         });
 
         modelBuilder.Entity<TodaysCondition>(entity =>
         {
-            entity.Property(e => e.id).HasColumnName("id");
-            entity.Property(e => e.state).HasColumnName("state");
-            entity.Property(e => e.tickerid).HasColumnName("tickerid");
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.State).HasColumnName("state");
+            entity.Property(e => e.TickerId).HasColumnName("tickerid");
 
-            entity.HasOne(d => d.Ticker).WithMany(p => p.TodaysConditions).HasForeignKey(d => d.tickerid);
+            entity.HasOne(d => d.Ticker).WithMany(p => p.TodaysConditions).HasForeignKey(d => d.TickerId);
         });
 
         OnModelCreatingPartial(modelBuilder);

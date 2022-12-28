@@ -5,9 +5,9 @@ namespace lab_10;
 
 public partial class Ticker
 {
-    public long id { get; set; }
+    public long Id { get; set; }
 
-    public string? ticker { get; set; }
+    public string? Ticker1 { get; set; }
 
     public virtual ICollection<Price> Prices { get; } = new List<Price>();
 

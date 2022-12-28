@@ -5,11 +5,11 @@ namespace lab_10;
 
 public partial class TodaysCondition
 {
-    public long id { get; set; }
+    public long Id { get; set; }
 
-    public long? tickerid { get; set; }
+    public long? TickerId { get; set; }
 
-    public double? state { get; set; }
+    public double? State { get; set; }
 
     public virtual Ticker? Ticker { get; set; }
 }

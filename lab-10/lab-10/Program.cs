@@ -1,78 +1,180 @@
-﻿using System.Globalization;
-using System.Net;
+﻿using System.Net;
+using Microsoft.EntityFrameworkCore;
+using lab_10;
 
-namespace lab_10;
 
-internal static class Program
+namespace lab10New
 {
-    static async Task Main()
+    class Program
     {
-        using (Lab10DbContext db = new Lab10DbContext())
+        static async Task Main(string[] args)
         {
-            CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
-            long time = DateTimeOffset.Now.ToUnixTimeSeconds();
-            long timeYearAgo = time - 31556926;
-            List<string> tickers = new List<string>();
-            using (StreamReader reader = new StreamReader(@"../../../../lab-10/ticker.txt"))
+            Console.WriteLine("Записать данные в бд? (y/n)");
+            var mode = Console.ReadLine();
+            if (mode == "y" || mode == "")
             {
-                string line;
-                while ((line = await reader.ReadLineAsync()) != null)
-                {
-                    tickers.Add(line);
-                }
+                CreateDb();
+                CreateConditions();
             }
 
-            for (var index = 0; index < tickers.Count; index++)
+            ChekerCondition();
+        }
+
+        static void CreateConditions()
+        {
+            using (Lab10DbContext db = new Lab10DbContext())
             {
-                var ticker = tickers[index];
-
-                string request =
-                    $"https://query1.finance.yahoo.com/v7/finance/download/{ticker}?period1={timeYearAgo}&period2={time}&interval=1d&events=history&includeAdjustedClose=true";
-
-                try
+                var tickers = db.Tickers.ToList();
+                int IdConditions = 1;
+                foreach (Ticker ticker in tickers)
                 {
-                    HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(request);
-                    HttpWebResponse response = (HttpWebResponse)webRequest.GetResponse();
-                    string content;
-                    using (Stream stream = response.GetResponseStream())
+                    var prices = (from price in db.Prices.Include(p => p.Ticker)
+                        where price.Ticker == ticker
+                        select price).ToList();
+                    var priceConditions = new TodaysCondition()
                     {
-                        using (StreamReader reader = new StreamReader(stream))
+                        Id = IdConditions++,
+                        TickerId = ticker.Id,
+                        Ticker = ticker,
+                        State = prices[0].Price1 - prices[1].Price1
+                    };
+
+                    db.TodaysConditions.Add(priceConditions);
+                }
+
+                db.SaveChanges();
+            }
+        }
+
+        static void ChekerCondition()
+        {
+            Console.WriteLine("Введите название тикера: ");
+            string tickerName = Console.ReadLine();
+            while (tickerName != "exit")
+            {
+                using (Lab10DbContext db = new Lab10DbContext())
+                {
+                    var prices = (from price in db.Prices.Include(p => p.Ticker)
+                        where price.Ticker.Ticker1 == tickerName
+                        select price).ToList();
+                    var condition = (from con in db.TodaysConditions.Include(p => p.Ticker)
+                        where con.Ticker.Ticker1 == tickerName
+                        select con).ToList();
+                    foreach (var price in prices)
+                        Console.WriteLine($"[{price.Date}] {price.Ticker.Ticker1} - {price.Price1}");
+                    foreach (var con in condition)
+                        Console.WriteLine($"State: {con.State}");
+                }
+
+                Console.WriteLine("\nВведите название тикера или \"exit\", чтобы выйти");
+                tickerName = Console.ReadLine();
+            }
+        }
+
+        static async void CreateDb()
+        {
+            string path = "../../../../lab-10/ticker.txt";
+            int IdTicker = 1;
+            int IdPrice = 1;
+            using (Lab10DbContext db = new Lab10DbContext())
+            {
+                db.Database.EnsureDeleted();
+                db.Database.EnsureCreated();
+                using (StreamReader TickersReader = File.OpenText(path))
+                {
+                    while (true)
+                    {
+                        string line = TickersReader.ReadLine();
+                        if (line == null)
                         {
-                            content = reader.ReadToEnd();
+                            break;
+                        }
+
+                        var nowTime = DateTimeOffset.Now.ToUnixTimeSeconds();
+                        var twoWeeksAgoTime = nowTime - 2 * 86400;
+                        try
+                        {
+                            var request =
+                                $"https://query1.finance.yahoo.com/v7/finance/download/{line}?period1={twoWeeksAgoTime}&period2={nowTime}&interval=1d&events=history&includeAdjustedClose=true";
+                            HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(request);
+                            HttpWebResponse response = (HttpWebResponse)webRequest.GetResponse();
+                            string content;
+                            using (Stream stream = response.GetResponseStream())
+                            {
+                                using (StreamReader reader = new StreamReader(stream))
+                                {
+                                    content = reader.ReadToEnd();
+                                }
+                            }
+
+                            string[] lines = content.Split('\n');
+                            List<double> listAvNum = new List<double>();
+                            double summa = 0;
+                            for (int i = 1; i < lines.Length; ++i)
+                            {
+                                listAvNum.Add(GetAverageNum(lines[i]));
+                            }
+                            
+                            var newTicker = new Ticker()
+                            {
+                                Id = IdTicker,
+                                Ticker1 = line
+                            };
+                            ++IdTicker;
+                            var priceForTicker1 = new Price()
+                            {
+                                Id = IdPrice,
+                                Ticker = newTicker,
+                                TickerId = newTicker.Id,
+                                Price1 = GetAverageNum(lines[1]),
+                                Date = DateTime.Now
+                            };
+                            ++IdPrice;
+                            var priceForTicker2 = new Price()
+                            {
+                                Id = IdPrice,
+                                Ticker = newTicker,
+                                TickerId = newTicker.Id,
+                                Price1 = GetAverageNum(lines[2]),
+                                Date = DateTime.Now.AddDays(-1)
+                            };
+                            ++IdPrice;
+
+                            Console.WriteLine($"{line} - Записан");
+                            db.Prices.Add(priceForTicker1);
+                            db.Prices.Add(priceForTicker2);
+                            db.Tickers.Add(newTicker);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.Write($"{line} - Данные не получены: ");
+                            Console.WriteLine(ex.Message);
                         }
                     }
 
-                    Ticker dbTicker = new Ticker { ticker = $"{ticker}" };
-                    db.Tickers.Add(dbTicker);
-                    await db.SaveChangesAsync();
-
-                    Console.WriteLine($"{index + 1}. {ticker}");
-                    string[] text = content.Split('\n');
-                    // var counter = Task.Factory.StartNew(() =>
-                    // {
-                    for (int i = 1; i < text.Length; ++i)
-                    {
-                        var average = (double.Parse(text[i].Split(',')[2]) +
-                                       double.Parse(text[i].Split(',')[3])) / 2;
-                        var date = text[i].Split(',')[0];
-                        Price dbPrice = new Price { price = average, date = date, tickerid = dbTicker.id };
-                        db.Prices.Add(dbPrice);
-                        await db.SaveChangesAsync();
-                    }
-
-                    var pricesList = db.Prices.ToList();
-                    var state = pricesList[pricesList.Count - 1].price - pricesList[pricesList.Count - 2].price;
-                    TodaysCondition dbTodaysCondition = new TodaysCondition
-                        { state = state, tickerid = dbTicker.id };
-                    db.TodaysConditions.Add(dbTodaysCondition);
-                    await db.SaveChangesAsync();
-                    // });
-                }
-                catch (WebException)
-                {
-                    Console.WriteLine($"{index + 1}. {ticker} - None");
+                    db.SaveChanges();
                 }
             }
+        }
+
+        static double GetAverageNum(string data)
+        {
+            double High = 0;
+            double Low = 0;
+
+            string[] fields = data.Split(',');
+            if (fields[2] != "null")
+            {
+                High = Double.Parse(fields[2].Replace('.', ','));
+            }
+
+
+            if (fields[3] != "null")
+            {
+                Low = Double.Parse(fields[3].Replace('.', ','));
+            }
+
+            return (High + Low) / 2;
         }
     }
 }

@@ -5,13 +5,13 @@ namespace lab_10;
 
 public partial class Price
 {
-    public long id { get; set; }
+    public long Id { get; set; }
 
-    public long? tickerid { get; set; }
+    public long? TickerId { get; set; }
 
-    public double? price { get; set; }
+    public double? Price1 { get; set; }
 
-    public string? date { get; set; }
+    public DateTime Date { get; set; }
 
     public virtual Ticker? Ticker { get; set; }
 }
