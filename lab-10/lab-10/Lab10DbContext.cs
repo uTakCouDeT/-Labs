@@ -23,7 +23,7 @@ public partial class Lab10DbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlite("Data Source=/home/user/csLabs/lab-10/lab-10/lab-10-db.sqlite");
+        => optionsBuilder.UseSqlite("Data Source=../../../../lab-10/lab-10-db.sqlite");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
