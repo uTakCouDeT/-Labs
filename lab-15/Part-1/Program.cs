@@ -102,8 +102,12 @@ class Program
             while (true)
             {
                 foreach (IObserver observer in observers)
+                {
+                    Console.Clear();
                     observer.Update();
-                Thread.Sleep(20000);
+                }
+
+                Thread.Sleep(5000);
             }
         }
     }
