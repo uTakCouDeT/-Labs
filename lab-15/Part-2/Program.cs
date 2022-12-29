@@ -1,7 +1,4 @@
-﻿using System;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-
+﻿using System.Text.Json;
 
 class Class1
 {
@@ -19,7 +16,7 @@ class Class1
             {
                 case 1:
                 {
-                    var txt = new MyLogger(new TxtRep("../../../../Part-2/logger.txt"));
+                    var txt = new MyLogger(new TxtRepository("../../../../Part-2/logger.txt"));
                     Console.WriteLine("1. - Записать в файл");
                     Console.WriteLine("2. - Удалить файл");
                     int mode = int.Parse(Console.ReadLine());
@@ -27,13 +24,13 @@ class Class1
                     {
                         case 1:
                         {
-                            int index = int.Parse(Console.ReadLine());
-                            string word = Console.ReadLine();
-                            txt.LogMessage(new DataBase(index, word));
+                            Console.WriteLine("Введите сообщение: ");
+                            string line = Console.ReadLine();
+                            txt.AddLogMessage(new LogMessage(line));
                             break;
                         }
                         case 2:
-                            txt.DeleteRepo();
+                            txt.DeleteFile();
                             break;
                     }
 
@@ -41,7 +38,7 @@ class Class1
                 }
                 case 2:
                 {
-                    var json = new MyLogger(new JsonRep("../../../../Part-2/logger.json"));
+                    var json = new MyLogger(new JsonRepository("../../../../Part-2/logger.json"));
                     Console.WriteLine("1. - Записать в файл");
                     Console.WriteLine("2. - Удалить файл");
                     int mode = int.Parse(Console.ReadLine());
@@ -49,13 +46,13 @@ class Class1
                     {
                         case 1:
                         {
-                            int index = int.Parse(Console.ReadLine());
-                            string word = Console.ReadLine();
-                            json.LogMessage(new DataBase(index, word));
+                            Console.WriteLine("Введите сообщение: ");
+                            string field = Console.ReadLine();
+                            json.AddLogMessage(new LogMessage(field));
                             break;
                         }
                         case 2:
-                            json.DeleteRepo();
+                            json.DeleteFile();
                             break;
                     }
 
@@ -70,40 +67,38 @@ class Class1
         }
     }
 
-    public class DataBase
+    public class LogMessage
     {
-        public DataBase(int id, string word)
+        public string Message { get; set; }
+
+        public LogMessage(string message)
         {
-            Id = id;
-            Word = word;
+            Message = message;
         }
 
         public string GetWord()
         {
-            return Word;
+            return Message;
         }
-
-        public int Id { get; set; }
-        public string Word { get; set; }
     }
 
-    internal interface MyRepository
+    internal interface IRepository
     {
-        public void CreateRepo();
-        public void UpdateRepo(DataBase obj);
-        public void DeleteRepo();
+        public void Create();
+        public void Update(LogMessage obj);
+        public void Delete();
     }
 
-    internal class JsonRep : MyRepository
+    internal class JsonRepository : IRepository
     {
         private string Path { get; set; }
 
-        public JsonRep(string filePath)
+        public JsonRepository(string filePath)
         {
             Path = filePath;
         }
 
-        public void CreateRepo()
+        public void Create()
         {
             if (File.Exists(Path))
             {
@@ -115,25 +110,25 @@ class Class1
             }
         }
 
-        public void UpdateRepo(DataBase unit)
+        public void Update(LogMessage unit)
         {
             using var jsonFile = new FileStream(Path, FileMode.OpenOrCreate);
             if (jsonFile.Length == 0)
             {
-                List<DataBase> dataBases = new List<DataBase>();
+                List<LogMessage> dataBases = new List<LogMessage>();
                 dataBases.Add(unit);
                 JsonSerializer.Serialize(jsonFile, dataBases);
             }
             else
             {
-                List<DataBase> temp = JsonSerializer.Deserialize<List<DataBase>>(jsonFile);
+                List<LogMessage> temp = JsonSerializer.Deserialize<List<LogMessage>>(jsonFile);
                 temp.Add(unit);
                 jsonFile.SetLength(0);
                 JsonSerializer.Serialize(jsonFile, temp);
             }
         }
 
-        public void DeleteRepo()
+        public void Delete()
         {
             if (!File.Exists(Path))
             {
@@ -152,16 +147,16 @@ class Class1
         }
     }
 
-    internal class TxtRep : MyRepository
+    internal class TxtRepository : IRepository
     {
         private string Path { set; get; }
 
-        public TxtRep(string filePath)
+        public TxtRepository(string filePath)
         {
             Path = filePath;
         }
 
-        public void CreateRepo()
+        public void Create()
         {
             if (File.Exists(Path))
             {
@@ -175,17 +170,17 @@ class Class1
             ;
         }
 
-        public void UpdateRepo(DataBase unit)
+        public void Update(LogMessage unit)
         {
             using var writer = new StreamWriter(Path, true);
             writer.WriteLine(unit.GetWord());
         }
 
-        public void DeleteRepo()
+        public void Delete()
         {
             if (!File.Exists(Path))
             {
-                Console.WriteLine("Файл не существует");
+                Console.WriteLine("Данного файла не существует");
                 return;
             }
 
@@ -202,22 +197,22 @@ class Class1
 
     internal class MyLogger
     {
-        private readonly MyRepository repositoryObject;
+        private readonly IRepository obj;
 
-        public MyLogger(MyRepository rep)
+        public MyLogger(IRepository rep)
         {
-            repositoryObject = rep;
-            repositoryObject.CreateRepo();
+            obj = rep;
+            obj.Create();
         }
 
-        public void LogMessage(DataBase unit)
+        public void AddLogMessage(LogMessage unit)
         {
-            repositoryObject.UpdateRepo(unit);
+            obj.Update(unit);
         }
 
-        public void DeleteRepo()
+        public void DeleteFile()
         {
-            repositoryObject.DeleteRepo();
+            obj.Delete();
         }
     }
 }

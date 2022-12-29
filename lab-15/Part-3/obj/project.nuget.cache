@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lcNOm35FbclJkkJ7yu2IdUZhI27FgLWBo4V2VWSO5tXYAAgr8DzTPQnhvT21jrNsL9Aj6wV9zL39rtHIIWh5Zw==",
+  "dgSpecHash": "IHDiCc34z6gyBwEhSqkmIPIMpAd4K4JmxVf4bYP++nxnzWYi5ugU1ZQHOjlCP3z3v+W3Yd4MMAmbapFlJpA1OA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-15\\Part-3\\Part-3.csproj",
+  "projectFilePath": "/home/user/csLabs/lab-15/Part-3/Part-3.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

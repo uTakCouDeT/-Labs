@@ -1,7 +1,4 @@
-﻿using System;
-using System.Data.SqlTypes;
-
-class Program
+﻿class Program
 {
     static void Main(string[] args)
     {

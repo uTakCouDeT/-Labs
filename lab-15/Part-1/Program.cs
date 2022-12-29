@@ -1,9 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Timers;
-
-
-class Program
+﻿class Program
 {
     static void Main(string[] args)
     {
