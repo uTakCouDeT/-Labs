@@ -7,14 +7,19 @@ class Program
 {
     static void Main(string[] args)
     {
+        List<string> PathList = new List<string>();
         Console.WriteLine("Введите путь до директории: ");
         string path = Console.ReadLine();
         while (true)
         {
-            Dir newDir2 = new Dir(path);
-            Watcher watcher = new Watcher();
-            watcher.AddObserver(newDir2);
-            watcher.NotifyObserversTimer();
+            WatchingDirectory watchingDirectory = new WatchingDirectory();
+            Watcher watcher = new Watcher(path, watchingDirectory);
+            while (true)
+            {
+                Console.Clear();
+                watchingDirectory.NotifyObservers();
+                Thread.Sleep(5000);
+            }
         }
     }
 
@@ -23,13 +28,16 @@ class Program
         void Update();
     }
 
-    class Dir : IObserver
+    class Watcher : IObserver
     {
         public string Path { get; set; }
+        private IObservable watchinDirectory;
 
-        public Dir(string dirPath)
+        public Watcher(string dirPath, IObservable obs)
         {
             Path = dirPath;
+            watchinDirectory = obs;
+            watchinDirectory.RegisterObserver(this);
         }
 
         public void Update()
@@ -58,30 +66,35 @@ class Program
             }
             else
             {
-                Console.WriteLine("Директории не существует");
+                Console.WriteLine("Данной директории не существует");
             }
+        }
+
+        public void StopWatching()
+        {
+            watchinDirectory.RemoveObserver(this);
+            watchinDirectory = null;
         }
     }
 
     interface IObservable
     {
-        void AddObserver(IObserver obj);
+        void RegisterObserver(IObserver obj);
         void RemoveObserver(IObserver obj);
         void NotifyObservers();
-        void NotifyObserversTimer();
     }
 
 
-    class Watcher : IObservable
+    class WatchingDirectory : IObservable
     {
         List<IObserver> observers;
 
-        public Watcher()
+        public WatchingDirectory()
         {
             observers = new List<IObserver>();
         }
 
-        public void AddObserver(IObserver unit)
+        public void RegisterObserver(IObserver unit)
         {
             observers.Add(unit);
         }
@@ -93,21 +106,10 @@ class Program
 
         public void NotifyObservers()
         {
+            Console.Clear();
             foreach (IObserver observer in observers)
-                observer.Update();
-        }
-
-        public void NotifyObserversTimer()
-        {
-            while (true)
             {
-                foreach (IObserver observer in observers)
-                {
-                    Console.Clear();
-                    observer.Update();
-                }
-
-                Thread.Sleep(5000);
+                observer.Update();
             }
         }
     }
