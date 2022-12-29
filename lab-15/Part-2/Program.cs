@@ -15,41 +15,51 @@ class Class1
             Console.WriteLine("0. - Выход");
             int type = int.Parse(Console.ReadLine());
 
-            if (type == 1)
+            switch (type)
             {
-                var txt = new MyLogger(new TxtRep("../../../../Part-2/logger.txt"));
-                Console.WriteLine("1. - Записать в файл");
-                Console.WriteLine("2. - Удалить файл");
-                int mode = int.Parse(Console.ReadLine());
-                if (mode == 1)
+                case 1:
                 {
-                    int index = int.Parse(Console.ReadLine());
-                    string word = Console.ReadLine();
-                    txt.LogMessage(new DataBase(index, word));
-                }
+                    var txt = new MyLogger(new TxtRep("../../../../Part-2/logger.txt"));
+                    Console.WriteLine("1. - Записать в файл");
+                    Console.WriteLine("2. - Удалить файл");
+                    int mode = int.Parse(Console.ReadLine());
+                    switch (mode)
+                    {
+                        case 1:
+                        {
+                            int index = int.Parse(Console.ReadLine());
+                            string word = Console.ReadLine();
+                            txt.LogMessage(new DataBase(index, word));
+                            break;
+                        }
+                        case 2:
+                            txt.DeleteRepo();
+                            break;
+                    }
 
-                if (mode == 2)
-                {
-                    txt.DeleteRepo();
+                    break;
                 }
-            }
-
-            if (type == 2)
-            {
-                var json = new MyLogger(new JsonRep("../../../../Part-2/logger.json"));
-                Console.WriteLine("1. - Записать в файл");
-                Console.WriteLine("2. - Удалить файл");
-                int mode = int.Parse(Console.ReadLine());
-                if (mode == 1)
+                case 2:
                 {
-                    int index = int.Parse(Console.ReadLine());
-                    string word = Console.ReadLine();
-                    json.LogMessage(new DataBase(index, word));
-                }
+                    var json = new MyLogger(new JsonRep("../../../../Part-2/logger.json"));
+                    Console.WriteLine("1. - Записать в файл");
+                    Console.WriteLine("2. - Удалить файл");
+                    int mode = int.Parse(Console.ReadLine());
+                    switch (mode)
+                    {
+                        case 1:
+                        {
+                            int index = int.Parse(Console.ReadLine());
+                            string word = Console.ReadLine();
+                            json.LogMessage(new DataBase(index, word));
+                            break;
+                        }
+                        case 2:
+                            json.DeleteRepo();
+                            break;
+                    }
 
-                if (mode == 2)
-                {
-                    json.DeleteRepo();
+                    break;
                 }
             }
 
