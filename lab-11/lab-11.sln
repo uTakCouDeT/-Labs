@@ -4,7 +4,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "part-1", "part-1\part-1.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{8E498B78-03D9-4BAE-8466-A712CABFAF55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP", "TCP\TCP.csproj", "{47B2C6E2-DE65-4B8A-81F1-462FCC3D734A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP-Server", "TCP-Server\TCP-Server.csproj", "{47B2C6E2-DE65-4B8A-81F1-462FCC3D734A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP-Client", "TCP-Client\TCP-Client.csproj", "{24C47BD7-D046-4EB5-A298-AC3B0EE836A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +26,9 @@ Global
 		{47B2C6E2-DE65-4B8A-81F1-462FCC3D734A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47B2C6E2-DE65-4B8A-81F1-462FCC3D734A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47B2C6E2-DE65-4B8A-81F1-462FCC3D734A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C47BD7-D046-4EB5-A298-AC3B0EE836A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C47BD7-D046-4EB5-A298-AC3B0EE836A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C47BD7-D046-4EB5-A298-AC3B0EE836A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C47BD7-D046-4EB5-A298-AC3B0EE836A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
