@@ -1,5 +1,0 @@
-/home/user/csLabs/lab-11/Logger/obj/Debug/net6.0/Logger.csproj.AssemblyReference.cache
-/home/user/csLabs/lab-11/Logger/obj/Debug/net6.0/Logger.GeneratedMSBuildEditorConfig.editorconfig
-/home/user/csLabs/lab-11/Logger/obj/Debug/net6.0/Logger.AssemblyInfoInputs.cache
-/home/user/csLabs/lab-11/Logger/obj/Debug/net6.0/Logger.AssemblyInfo.cs
-/home/user/csLabs/lab-11/Logger/obj/Debug/net6.0/Logger.csproj.CoreCompileInputs.cache
