@@ -16,7 +16,7 @@ try
         using var tcpClient = await server.AcceptTcpClientAsync();
         Console.WriteLine($"Входящее подключение: {tcpClient.Client.RemoteEndPoint}");
         var stream = tcpClient.GetStream();
-        int bytesRead = 0;
+        int bytesRead = 10;
         while (true)
         {
             var data = new List<byte>();
@@ -26,13 +26,14 @@ try
             }
 
             var word = Encoding.UTF8.GetString(data.ToArray());
-            float priceToday = 0;
+            float? priceToday = null;
             if (word == "exit")
             {
+                Console.WriteLine("Подключение закрыто");
                 break;
             }
 
-            Console.WriteLine($"Ticker is {word}");
+            Console.WriteLine($"Тикер - {word}");
 
             using (Lab10DbContext db = new Lab10DbContext())
             {
@@ -41,14 +42,28 @@ try
                     where price.Ticker.Ticker1 == word
                     orderby price
                     select price).ToList();
-
-                priceToday = (float)prices[0].Price1;
+                if (prices.Count != 0)
+                {
+                    priceToday = (float)prices[0].Price1;
+                }
             }
 
-            byte[] buffer = Encoding.UTF8.GetBytes($"{Convert.ToString(priceToday)}\n");
-            await stream.WriteAsync(buffer, 0, buffer.Length);
+            if (priceToday != null)
+            {
+                byte[] buffer = Encoding.UTF8.GetBytes($"{Convert.ToString(priceToday)}\n");
+                await stream.WriteAsync(buffer, 0, buffer.Length);
+            }
+            else
+            {
+                byte[] buffer = Encoding.UTF8.GetBytes("Тикер не найден\n");
+                await stream.WriteAsync(buffer, 0, buffer.Length);
+            }
         }
     }
+}
+catch (Exception exception)
+{
+    Console.WriteLine($"{exception.Message}");
 }
 finally
 {

@@ -26,19 +26,23 @@ NetworkStream stream = tcpClient.GetStream();
 // буфер для входящих данных
 var response = new List<byte>();
 int bytesRead = 10; // для считывания байтов из потока
+string line;
 
-Console.WriteLine("Введите название тикера: ");
-
-// определяем отправляемые данные
-var word = Console.ReadLine();
-
-while (word != "exit")
+while (true)
 {
+    Console.WriteLine("Введите название тикера или \"exit\", чтобы закрыть подключение");
+    line = Console.ReadLine();
+
     // считыванием строку в массив байт
-    // при отправке добавляем маркер завершения сообщения - \n
-    byte[] data = Encoding.UTF8.GetBytes(word + '\n');
+    byte[] data = Encoding.UTF8.GetBytes(line + '\n');
+
     // отправляем данные
     await stream.WriteAsync(data);
+
+    if (line == "exit")
+    {
+        break;
+    }
 
     // считываем данные до конечного символа
     while ((bytesRead = stream.ReadByte()) != '\n')
@@ -48,15 +52,9 @@ while (word != "exit")
     }
 
     var translation = Encoding.UTF8.GetString(response.ToArray());
-    Console.WriteLine($"Слово {word}: {translation}");
-
-    // выводим данные на консоль
-    Console.WriteLine(response);
+    Console.WriteLine($"Тикер {line}: {translation}");
 
     response.Clear();
-
-    Console.WriteLine("\nВведите название тикера или \"exit\", чтобы закрыть подключение");
-    word = Console.ReadLine();
 }
 
 tcpClient.Close(); // закрываем подключение

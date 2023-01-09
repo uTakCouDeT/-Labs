@@ -513,7 +513,7 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "part-1/1.0.0": {
+      "lab-10/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -521,10 +521,10 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.1"
         },
         "compile": {
-          "bin/placeholder/part-1.dll": {}
+          "bin/placeholder/lab-10.dll": {}
         },
         "runtime": {
-          "bin/placeholder/part-1.dll": {}
+          "bin/placeholder/lab-10.dll": {}
         }
       }
     }
@@ -1189,15 +1189,15 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "part-1/1.0.0": {
+    "lab-10/1.0.0": {
       "type": "project",
-      "path": "../part-1/part-1.csproj",
-      "msbuildProject": "../part-1/part-1.csproj"
+      "path": "../lab-10/lab-10.csproj",
+      "msbuildProject": "../lab-10/lab-10.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "part-1 >= 1.0.0"
+      "lab-10 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1225,8 +1225,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/user/csLabs/lab-11/part-1/part-1.csproj": {
-              "projectPath": "/home/user/csLabs/lab-11/part-1/part-1.csproj"
+            "/home/user/csLabs/lab-11/lab-10/lab-10.csproj": {
+              "projectPath": "/home/user/csLabs/lab-11/lab-10/lab-10.csproj"
             }
           }
         }

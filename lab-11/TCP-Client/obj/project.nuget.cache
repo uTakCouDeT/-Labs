@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m08zGfkGXmwoxQZmvp7QJHrnlg+xt3RkKElsWL7Qov72k6xK9KTSDajD3yqHq1un+RwJrXYLdCM0pvfYuCMUQA==",
+  "dgSpecHash": "+JOdF4I/wEte2Zk/Ns+wolnK8/TxoiWrFsHFOtClUlgfvGjuxTwVZy6ZoS6882WvFZTC8OLvQJrTrEo7IxGI4w==",
   "success": true,
   "projectFilePath": "/home/user/csLabs/lab-11/TCP-Client/TCP-Client.csproj",
   "expectedPackageFiles": [

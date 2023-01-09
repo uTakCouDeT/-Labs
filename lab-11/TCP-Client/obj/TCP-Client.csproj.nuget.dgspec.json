@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/user/csLabs/lab-11/part-1/part-1.csproj": {
-                "projectPath": "/home/user/csLabs/lab-11/part-1/part-1.csproj"
+              "/home/user/csLabs/lab-11/lab-10/lab-10.csproj": {
+                "projectPath": "/home/user/csLabs/lab-11/lab-10/lab-10.csproj"
               }
             }
           }
@@ -60,14 +60,14 @@
         }
       }
     },
-    "/home/user/csLabs/lab-11/part-1/part-1.csproj": {
+    "/home/user/csLabs/lab-11/lab-10/lab-10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/user/csLabs/lab-11/part-1/part-1.csproj",
-        "projectName": "part-1",
-        "projectPath": "/home/user/csLabs/lab-11/part-1/part-1.csproj",
+        "projectUniqueName": "/home/user/csLabs/lab-11/lab-10/lab-10.csproj",
+        "projectName": "lab-10",
+        "projectPath": "/home/user/csLabs/lab-11/lab-10/lab-10.csproj",
         "packagesPath": "/home/user/.nuget/packages/",
-        "outputPath": "/home/user/csLabs/lab-11/part-1/obj/",
+        "outputPath": "/home/user/csLabs/lab-11/lab-10/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/user/.nuget/NuGet/NuGet.Config"

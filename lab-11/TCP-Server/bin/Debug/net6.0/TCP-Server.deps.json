@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "TCP-Server/1.0.0": {
         "dependencies": {
-          "part-1": "1.0.0"
+          "lab-10": "1.0.0"
         },
         "runtime": {
           "TCP-Server.dll": {}
@@ -374,13 +374,13 @@
           }
         }
       },
-      "part-1/1.0.0": {
+      "lab-10/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.1"
         },
         "runtime": {
-          "part-1.dll": {}
+          "lab-10.dll": {}
         }
       }
     }
@@ -566,7 +566,7 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
-    "part-1/1.0.0": {
+    "lab-10/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
