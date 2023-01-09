@@ -1,0 +1,30 @@
+﻿@page
+@model lab12New.Pages.Recipients.DetailsModel
+@{
+	ViewData["Title"] = "Detail";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Recipient</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.recipient.FullName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.recipient.FullName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.recipient.Address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.recipient.Address)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.recipient?.Id">Edit</a> |
+    <a asp-page="./Recipient">Back to List</a>
+</div>

@@ -1,0 +1,53 @@
+﻿@page
+@model lab12New.Pages.Companys.CreateModel
+@{
+	ViewData["title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>company</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="company.Name" class="control-label"></label>
+                <input asp-for="company.Name" class="form-control" />
+                <span asp-validation-for="company.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="company.Id" class="control-label"></label>
+                <input asp-for="company.Id" class="form-control" />
+                <span asp-validation-for="company.Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="company.Country" class="control-label"></label>
+                <input asp-for="company.Country" class="form-control" />
+                <span asp-validation-for="company.Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="company.WayOfDelevery" class="control-label"></label>
+                <input asp-for="company.WayOfDelevery" class="form-control" />
+                <span asp-validation-for="company.WayOfDelevery" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="company.CostOfDelevery" class="control-label"></label>
+                <input asp-for="company.CostOfDelevery" class="form-control" />
+                <span asp-validation-for="company.CostOfDelevery" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Company">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

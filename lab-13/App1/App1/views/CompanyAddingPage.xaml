@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.views.CompanyAddingPage">
+    <ContentPage.Content>
+        <StackLayout Margin="5">
+            <Editor Placeholder="Name" Text="{Binding Name}" HeightRequest="50"></Editor>
+            <Editor Placeholder="Country" Text="{Binding Country}" HeightRequest="50"></Editor>
+            <Editor Placeholder="WayOfDelevery" Text="{Binding WayOfDelevery}" HeightRequest="50"></Editor>
+            <Editor Placeholder="CostOfDelevery" Text="{Binding CostOfDelevery}" HeightRequest="50"></Editor>
+            <Grid ColumnDefinitions="*,*">
+                <Button Text="Save"
+                        Clicked="OnSaveButton_Clicked" />
+                <Button Text="Delete"
+                        Grid.Column="1"
+                        Clicked="OnDeleteButton_clicked" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

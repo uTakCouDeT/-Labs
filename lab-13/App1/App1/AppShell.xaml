@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.AppShell"
+       xmlns:views="clr-namespace:App1.views">
+
+    <TabBar>
+        <ShellContent Title="Goods"
+                      Icon="Goods.png"
+                      ContentTemplate="{DataTemplate views:Page1}">
+            
+        </ShellContent>
+
+        <ShellContent Title="Company"
+                      Icon="Company.png"
+                      ContentTemplate="{DataTemplate views:CompanyPage}">
+
+        </ShellContent>
+
+        <ShellContent Title="Recipient"
+                      Icon="Recipient.png"
+                      ContentTemplate="{DataTemplate views:RecipientPage}">
+
+        </ShellContent>
+    </TabBar>
+</Shell>

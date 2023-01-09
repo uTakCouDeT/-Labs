@@ -1,0 +1,30 @@
+﻿@page
+@model lab12New.Pages.Companys.DetailsModel
+@{
+	ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+
+<div>
+    <h4>company</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._company.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._company.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._company.Country)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._company.Country)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model._company?.Id">Edit</a> |
+    <a asp-page="./Company">Back to List</a>
+</div>

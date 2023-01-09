@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3be68233-b84d-4d83-89d2-80e4573af5d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab-11-WebAPI/Model/Model.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab-11-WebAPI/Model/bin/Debug/net6.0/Model.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab-11-WebAPI/Model/bin/Debug/net6.0/Model.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab-11-WebAPI/lab-11-WebAPI/bin/Debug/net6.0/lab-11-WebAPI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab-11-WebAPI/lab-11-WebAPI/bin/Debug/net6.0/lab-11-WebAPI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab-11-WebAPI/lab-11-WebAPI/lab-11-WebAPI.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab-12/lab-12/bin/Debug/net6.0/lab-12.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab-12/lab-12/bin/Debug/net6.0/lab-12.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/.idea/.idea.lab-12/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/.idea/.idea.lab-12/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/lab-12.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/lab-12.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/Debug/net6.0/lab-12.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/obj/Debug/net6.0/lab-12.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/Debug/net6.0/lab-12.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/obj/Debug/net6.0/lab-12.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/Debug/net6.0/lab-12.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/obj/Debug/net6.0/lab-12.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/Debug/net6.0/lab-12.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/lab-12.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/obj/lab-12.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/lab-12.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/obj/lab-12.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/lab-12.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/obj/lab-12.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab-12/lab-12/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../lab-12/lab-12/obj/rider.project.restore.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2K6A1w1wM6AXf8aaEpmiG7Nyfeh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "AndroidSettingsPageId",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/home/user/.config/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
+      "/home/user/.config/JetBrains/Rider2022.3/resharper-host/SourcesCache",
+      "/home/user/.local/share/Symbols/src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3be68233-b84d-4d83-89d2-80e4573af5d2" name="Changes" comment="" />
+      <created>1673284446460</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673284446460</updated>
+      <workItem from="1673284447719" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

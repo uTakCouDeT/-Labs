@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab-11-WebAPI", "lab-11-WebAPI\lab-11-WebAPI.csproj", "{9942EA4C-9892-4756-A19C-123B614A3962}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebClient.csproj", "{38A1A3F6-F7C0-4ECF-82FB-FF28031A04C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{7D0468A4-11AF-402B-92AF-D6DDA9C8B54E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9942EA4C-9892-4756-A19C-123B614A3962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9942EA4C-9892-4756-A19C-123B614A3962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9942EA4C-9892-4756-A19C-123B614A3962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9942EA4C-9892-4756-A19C-123B614A3962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A1A3F6-F7C0-4ECF-82FB-FF28031A04C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A1A3F6-F7C0-4ECF-82FB-FF28031A04C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A1A3F6-F7C0-4ECF-82FB-FF28031A04C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A1A3F6-F7C0-4ECF-82FB-FF28031A04C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D0468A4-11AF-402B-92AF-D6DDA9C8B54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0468A4-11AF-402B-92AF-D6DDA9C8B54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D0468A4-11AF-402B-92AF-D6DDA9C8B54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D0468A4-11AF-402B-92AF-D6DDA9C8B54E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88578C0E-C5E0-4C72-B7C4-90948685865D}
+	EndGlobalSection
+EndGlobal

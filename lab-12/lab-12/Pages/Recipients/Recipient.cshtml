@@ -1,0 +1,43 @@
+﻿@page
+@model lab12New.Pages.Recipients.RecipientModel
+@{
+	ViewData["Title"] = "Recipient";
+}
+
+<h1>Recipients</h1>
+
+<div>
+    <h4>Recipient</h4>
+    <hr />
+    <dl class="row">
+        <dd class="col-sm-10">
+            <table class="table" border="0" style="position:relative;">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Recipients[0].FullName)</th>
+                    <th>@Html.DisplayNameFor(model => model.Recipients[0].Address)</th>
+                    <th>@Html.DisplayNameFor(model => model.Recipients[0].Country)</th>
+                </tr>
+                @foreach (var item in Model.Recipients)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FullName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Country)
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Recipients[0].Id" asp-area="Goods">Edit</a> |
+    <a asp-page="./Details" asp-route-id="@Model.Recipients[0].Id" asp-area="Goods">Details</a> |
+    <a asp-page="./Delete" asp-route-id="@Model.Recipients[0].Id" asp-area="Goods">Delete</a> |
+    <a asp-page="./Create" asp-route-id="@Model.Recipients[0].Id" asp-area="Goods">Create</a>
+</div>
