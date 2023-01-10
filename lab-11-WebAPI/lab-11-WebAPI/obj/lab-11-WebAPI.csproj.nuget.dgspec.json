@@ -1,20 +1,96 @@
 {
   "format": 1,
   "restore": {
-    "/home/user/csLabs/lab-11-WebAPI/lab-11-WebAPI/lab-11-WebAPI.csproj": {}
+    "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\lab-11-WebAPI\\lab-11-WebAPI.csproj": {}
   },
   "projects": {
-    "/home/user/csLabs/lab-11-WebAPI/Model/Model.csproj": {
+    "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\lab-11-WebAPI\\lab-11-WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/user/csLabs/lab-11-WebAPI/Model/Model.csproj",
-        "projectName": "Model",
-        "projectPath": "/home/user/csLabs/lab-11-WebAPI/Model/Model.csproj",
-        "packagesPath": "/home/user/.nuget/packages/",
-        "outputPath": "/home/user/csLabs/lab-11-WebAPI/Model/obj/",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\lab-11-WebAPI\\lab-11-WebAPI.csproj",
+        "projectName": "lab-11-WebAPI",
+        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\lab-11-WebAPI\\lab-11-WebAPI.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\lab-11-WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/user/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\Model\\Model.csproj"
+              },
+              "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\WebClient\\WebClient.csproj": {
+                "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\WebClient\\WebClient.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -68,21 +144,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.112/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/user/csLabs/lab-11-WebAPI/WebClient/WebClient.csproj": {
+    "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\WebClient\\WebClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/user/csLabs/lab-11-WebAPI/WebClient/WebClient.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\WebClient\\WebClient.csproj",
         "projectName": "WebClient",
-        "projectPath": "/home/user/csLabs/lab-11-WebAPI/WebClient/WebClient.csproj",
-        "packagesPath": "/home/user/.nuget/packages/",
-        "outputPath": "/home/user/csLabs/lab-11-WebAPI/WebClient/obj/",
+        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\WebClient\\WebClient.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\WebClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/user/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -94,8 +170,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/user/csLabs/lab-11-WebAPI/Model/Model.csproj": {
-                "projectPath": "/home/user/csLabs/lab-11-WebAPI/Model/Model.csproj"
+              "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-11-WebAPI\\Model\\Model.csproj"
               }
             }
           }
@@ -124,83 +200,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.112/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/home/user/csLabs/lab-11-WebAPI/lab-11-WebAPI/lab-11-WebAPI.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/user/csLabs/lab-11-WebAPI/lab-11-WebAPI/lab-11-WebAPI.csproj",
-        "projectName": "lab-11-WebAPI",
-        "projectPath": "/home/user/csLabs/lab-11-WebAPI/lab-11-WebAPI/lab-11-WebAPI.csproj",
-        "packagesPath": "/home/user/.nuget/packages/",
-        "outputPath": "/home/user/csLabs/lab-11-WebAPI/lab-11-WebAPI/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/user/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "/home/user/csLabs/lab-11-WebAPI/Model/Model.csproj": {
-                "projectPath": "/home/user/csLabs/lab-11-WebAPI/Model/Model.csproj"
-              },
-              "/home/user/csLabs/lab-11-WebAPI/WebClient/WebClient.csproj": {
-                "projectPath": "/home/user/csLabs/lab-11-WebAPI/WebClient/WebClient.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[7.0.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.112/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
         }
       }
     }

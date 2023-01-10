@@ -8,97 +8,97 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = lab12New
 build_property.RootNamespace = lab12New
-build_property.ProjectDir = /home/user/csLabs/lab-12/lab-12/
+build_property.ProjectDir = C:\Users\user\Documents\GitHub\csLabs\lab-12\lab-12\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/user/csLabs/lab-12/lab-12
+build_property.MSBuildProjectDirectory = C:\Users\user\Documents\GitHub\csLabs\lab-12\lab-12
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Company/Company.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcGFueS9Db21wYW55LmNzaHRtbA==
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Company/Company.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxDb21wYW55LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Company/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcGFueS9DcmVhdGUuY3NodG1s
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Company/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Company/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcGFueS9EZWxldGUuY3NodG1s
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Company/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Company/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcGFueS9EZXRhaWxzLmNzaHRtbA==
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Company/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Company/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcGFueS9FZGl0LmNzaHRtbA==
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Company/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Goods/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR29vZHMvQ3JlYXRlLmNzaHRtbA==
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Goods/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR29vZHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Goods/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR29vZHMvRGVsZXRlLmNzaHRtbA==
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Goods/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR29vZHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Goods/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR29vZHMvRGV0YWlscy5jc2h0bWw=
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Goods/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR29vZHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Goods/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR29vZHMvRWRpdC5jc2h0bWw=
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Goods/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR29vZHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Goods/good.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR29vZHMvZ29vZC5jc2h0bWw=
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Goods/good.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR29vZHNcZ29vZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Recipients/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjaXBpZW50cy9DcmVhdGUuY3NodG1s
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Recipients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjaXBpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Recipients/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjaXBpZW50cy9EZWxldGUuY3NodG1s
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Recipients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjaXBpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Recipients/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjaXBpZW50cy9EZXRhaWxzLmNzaHRtbA==
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Recipients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjaXBpZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Recipients/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjaXBpZW50cy9FZGl0LmNzaHRtbA==
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Recipients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjaXBpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Recipients/Recipient.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjaXBpZW50cy9SZWNpcGllbnQuY3NodG1s
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Recipients/Recipient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjaXBpZW50c1xSZWNpcGllbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/csLabs/lab-12/lab-12/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-h1mjlligzl
+[C:/Users/user/Documents/GitHub/csLabs/lab-12/lab-12/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1772ltq8cv

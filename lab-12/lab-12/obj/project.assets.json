@@ -3928,19 +3928,19 @@
     ]
   },
   "packageFolders": {
-    "/home/user/.nuget/packages/": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/user/csLabs/lab-12/lab-12/lab-12.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-12\\lab-12\\lab-12.csproj",
       "projectName": "lab-12",
-      "projectPath": "/home/user/csLabs/lab-12/lab-12/lab-12.csproj",
-      "packagesPath": "/home/user/.nuget/packages/",
-      "outputPath": "/home/user/csLabs/lab-12/lab-12/obj/",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-12\\lab-12\\lab-12.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\csLabs\\lab-12\\lab-12\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/user/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -4007,7 +4007,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.112/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
       }
     }
   }
