@@ -5,7 +5,7 @@ using System.Text;
 using TcpClient tcpClient = new TcpClient();
 try
 {
-    await tcpClient.ConnectAsync(IPAddress.Any, 8888);
+    await tcpClient.ConnectAsync("127.0.0.1", 8888);
     if (tcpClient.Connected)
     {
         Console.WriteLine($"Подключение с {tcpClient.Client.RemoteEndPoint} установлено");

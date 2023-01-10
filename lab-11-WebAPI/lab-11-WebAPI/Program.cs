@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddScoped<ISuppliers, Supp>();
 builder.Services.AddDbContext<Northwind>(opt =>
-    opt.UseSqlServer("Data Source=localhost;Initial Catalog=Northwind;User ID=sa;Password=Kyalayum;Encrypt=False",
+    opt.UseSqlServer("Data Source=localhost;Initial Catalog=Northwind;User ID=sa;Password=HelloWorld10;Encrypt=False",
         providerOptions => { providerOptions.EnableRetryOnFailure(); }));
 builder.Services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new() { Title = "TodoApi", Version = "v1" }); });
 
